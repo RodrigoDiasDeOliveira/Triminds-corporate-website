@@ -111,6 +111,9 @@ export interface ResearchArticle {
   }[];
   conclusions: string;
   doiOrReference: string;
+  repositoryUrl?: string;
+  portfolioLabel?: string;
+  operationalMonitoring?: 'excluded' | 'operational';
 }
 
 export interface AISystem {
