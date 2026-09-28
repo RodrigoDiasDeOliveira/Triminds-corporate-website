@@ -165,7 +165,10 @@ function executeVerifiedAgentAction(action: AgentAction): ExecutionResult {
       }
     ],
     conclusions: "The project is retained as research evidence for trustworthy AI, claim analysis and evidence-based verification. Its value in the portfolio is the engineering exploration and reusable concepts, not a production guarantee of hallucination-free AI.",
-    doiOrReference: "TRIMINDS-RES-DET-2026 // DetectorHallucination Research Repository"
+    doiOrReference: "TRIMINDS-RES-DET-2026 // DetectorHallucination Research Repository",
+    repositoryUrl: "https://github.com/RodrigoDiasDeOliveira/DetectorHallucination",
+    portfolioLabel: "Research / Experimental",
+    operationalMonitoring: "excluded"
   },
   {
     id: "eye-guardian",
@@ -194,7 +197,10 @@ function executeVerifiedAgentAction(action: AgentAction): ExecutionResult {
       }
     ],
     conclusions: "The project records an experimental line of research around assistive AI, computer vision and multimodal accessibility. Its portfolio purpose is to preserve and expose the research trajectory without overstating production maturity.",
-    doiOrReference: "TRIMINDS-RES-EYE-2026 // EyeGuardian Research Repository"
+    doiOrReference: "TRIMINDS-RES-EYE-2026 // EyeGuardian Research Repository",
+    repositoryUrl: "https://github.com/RodrigoDiasDeOliveira/EyeGuardian",
+    portfolioLabel: "Research / Experimental",
+    operationalMonitoring: "excluded"
   }
 
 ];
