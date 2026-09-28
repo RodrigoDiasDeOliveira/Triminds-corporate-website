@@ -136,4 +136,65 @@ function executeVerifiedAgentAction(action: AgentAction): ExecutionResult {
     conclusions: "Adopting this standard prevents the common transition failure where promising prototypes crumble under real-world enterprise load.",
     doiOrReference: "TRIMINDS-STD-2026-05 // Production Standard V2"
   }
+
+  ,
+  {
+    id: "detector-hallucination",
+    title: "DetectorHallucination — Research Laboratory for AI Claim Verification",
+    category: "Research / Experimental",
+    readTime: "Repository study",
+    publishedDate: "September 2026",
+    abstract: "An experimental AI/NLP verification project investigating how generated responses can be decomposed into claims, compared against retrieved evidence, and evaluated through explicit verification logic. The repository combines a Java/Spring Boot backend with a Python/FastAPI NLP service and technologies including Hugging Face Transformers, Weaviate and PostgreSQL. The project is presented as research: it does not claim universal or guaranteed hallucination detection.",
+    keyTakeaways: [
+      "The research treats hallucination analysis as a verification pipeline rather than a single-model classification problem.",
+      "Claim extraction, evidence retrieval, semantic comparison and decision logic are explicit research concerns.",
+      "The repository is portfolio evidence of experimentation in trustworthy AI and verification, not an operational production service."
+    ],
+    bodySections: [
+      {
+        heading: "Research Scope",
+        content: "DetectorHallucination explores a structured approach to evaluating generated content. The repository combines a Java/Spring Boot application layer with a Python/FastAPI NLP service, using transformer-based language processing, retrieval infrastructure and persistence to investigate claim-level verification."
+      },
+      {
+        heading: "Verification Model",
+        content: "The central research direction can be represented as: generated response → claims → evidence retrieval → semantic comparison → verification decision. This creates explicit boundaries between generation and verification and provides a basis for measuring where uncertainty or disagreement enters the pipeline."
+      },
+      {
+        heading: "Portfolio Role",
+        content: "DetectorHallucination belongs to the Triminds Research / Experimental portfolio layer. It is intentionally not represented as an operationally monitored product and should not contribute to production health, CI telemetry or operational dashboard status."
+      }
+    ],
+    conclusions: "The project is retained as research evidence for trustworthy AI, claim analysis and evidence-based verification. Its value in the portfolio is the engineering exploration and reusable concepts, not a production guarantee of hallucination-free AI.",
+    doiOrReference: "TRIMINDS-RES-DET-2026 // DetectorHallucination Research Repository"
+  },
+  {
+    id: "eye-guardian",
+    title: "EyeGuardian — Research Laboratory for Assistive Computer Vision",
+    category: "Research / Experimental",
+    readTime: "Repository study",
+    publishedDate: "September 2026",
+    abstract: "An experimental assistive-technology project investigating computer vision and multimodal interaction for people with visual impairment. The repository explores recognition of people and objects, environmental understanding, proximity and contextual location, GPS/mobile sensing, indoor/outdoor navigation concepts, text-to-speech and tactile or vibration feedback. Proposed or future capabilities are kept distinct from what is currently implemented.",
+    keyTakeaways: [
+      "The research combines computer vision with auditory, tactile and contextual interaction rather than treating recognition as an isolated model.",
+      "Mobile sensors, location context and navigation are investigated as part of a broader assistive system.",
+      "The repository is portfolio research evidence and is intentionally outside operational observability and production health monitoring."
+    ],
+    bodySections: [
+      {
+        heading: "Research Scope",
+        content: "EyeGuardian investigates how computer vision can become part of an assistive interaction loop: perceive the environment, derive contextual information, and communicate useful feedback through modalities appropriate to the user."
+      },
+      {
+        heading: "Multimodal Direction",
+        content: "The repository explores visual recognition together with GPS/mobile sensing, navigation concepts, text-to-speech and tactile or vibration feedback. These elements are documented as implemented capabilities only where the repository supports that claim; future directions remain explicitly experimental."
+      },
+      {
+        heading: "Portfolio Role",
+        content: "EyeGuardian belongs to the Triminds Research / Experimental layer. It is included in the technology portfolio for research continuity and intellectual evidence, but it is not treated as an operational product and does not contribute to the operational observability dashboard."
+      }
+    ],
+    conclusions: "The project records an experimental line of research around assistive AI, computer vision and multimodal accessibility. Its portfolio purpose is to preserve and expose the research trajectory without overstating production maturity.",
+    doiOrReference: "TRIMINDS-RES-EYE-2026 // EyeGuardian Research Repository"
+  }
+
 ];
