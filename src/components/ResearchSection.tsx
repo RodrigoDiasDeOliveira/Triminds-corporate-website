@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, ArrowRight, X, FileText, CheckCircle2, Copy, Check } from 'lucide-react';
+import { BookOpen, ArrowRight, X, FileText, CheckCircle2, Copy, Check, ExternalLink } from 'lucide-react';
 import { RESEARCH_ARTICLES } from '../data/researchData';
 import { ResearchArticle } from '../types';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -39,11 +39,18 @@ export const ResearchSection: React.FC = () => {
             className="rounded-xl border border-[#D1D1CD] bg-white hover:border-[#1A1A1A] transition-all p-6 flex flex-col justify-between space-y-6 group shadow-xs"
           >
             <div className="space-y-3">
-              <div className="flex items-center justify-between text-[11px] font-mono">
-                <span className="px-2 py-0.5 rounded bg-[#F4F4F1] border border-[#D1D1CD] text-[#1A1A1A] font-semibold">
-                  {article.category}
-                </span>
-                <span className="text-[#70706B]">{article.readTime} • {article.publishedDate}</span>
+              <div className="flex items-center justify-between text-[11px] font-mono gap-2">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="px-2 py-0.5 rounded bg-[#F4F4F1] border border-[#D1D1CD] text-[#1A1A1A] font-semibold">
+                    {article.category}
+                  </span>
+                  {article.operationalMonitoring === 'excluded' && (
+                    <span className="px-2 py-0.5 rounded bg-white border border-[#D1D1CD] text-[#70706B] font-semibold">
+                      Portfolio only · no operational monitoring
+                    </span>
+                  )}
+                </div>
+                <span className="text-[#70706B] shrink-0">{article.readTime} • {article.publishedDate}</span>
               </div>
 
               <h3 className="text-lg font-bold text-[#1A1A1A] font-sans">
