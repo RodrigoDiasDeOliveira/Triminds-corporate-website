@@ -45,7 +45,7 @@ export interface CorporatePositioningData {
 
 export const CORPORATE_POSITIONING_I18N: Record<Language, CorporatePositioningData> = {
   en: {
-    specificationDocumentId: "DOC-TRIMINDS-POSITIONING-V1.0",
+    specificationDocumentId: "DOC-TRIMINDSLABS-POSITIONING-V1.0",
     lastAudit: "2026-Q3",
     auditVersion: "V1.0 Consolidated Post-Audit",
     jurisdiction: "European Union (GDPR / EU AI Act Strict Compliance)",
@@ -53,15 +53,15 @@ export const CORPORATE_POSITIONING_I18N: Record<Language, CorporatePositioningDa
     mission: "To engineer intelligent systems that address real-world problems through reliable, secure, and measurable technology.",
     vision: "To help establish a higher standard for engineering intelligent systems that are trustworthy, observable, secure, and ready for real-world operation.",
 
-    whatTrimindsIs: "Triminds is an advanced systems engineering and production AI organization. We build deterministic, observable, and hardened intelligent systems for high-stakes enterprise and industrial environments.",
+    whatTrimindsIs: "Trimindslabs is an advanced systems engineering and production AI organization. We build deterministic, observable, and hardened intelligent systems for high-stakes enterprise and industrial environments.",
     whatTrimindsBuilds: "Enterprise-grade Trusted Search engines, deterministic/controlled agentic workflows, geospatial intelligence platforms, and zero-trust AI security observation layers.",
     whatTrimindsDoesNotClaimToBe: "We are not a generic generative AI hype agency, not an ungrounded LLM wrapper, and not sellers of opaque 'black-box' algorithms. We do not deploy stochastic models without deterministic validation fences, mathematical reranking, and full trace observability.",
     whoTrimindsServes: "Tier-1 enterprise infrastructure, cross-border logistics operators, geospatial & satellite analytics firms, regulated financial & legal compliance institutions, and mission-critical engineering organizations across Europe and worldwide.",
-    whyTrimindsExists: "Because the vast majority of enterprise AI fails in production due to lack of determinism, hallucination risk, compliance breaches, and zero operational observability. Triminds was founded to bring rigorous software and systems engineering to artificial intelligence.",
+    whyTrimindsExists: "Because the vast majority of enterprise AI fails in production due to lack of determinism, hallucination risk, compliance breaches, and zero operational observability. Trimindslabs was founded to bring rigorous software and systems engineering to artificial intelligence.",
 
     differenceBetweenTrimindsAndArchitectureLeadership: {
       architectureLeadership: "The systems architecture leadership conceived the foundational algorithms, geospatial heuristics, and retrieval-engine architecture, driving technical rigor and architectural invariance.",
-      triminds: "Triminds is the sovereign corporate entity, engineering collective, and operational platform infrastructure built for enterprise SLA delivery, continuous multi-tenant governance, long-term support, and institutional accountability."
+      triminds: "Trimindslabs is the sovereign corporate entity, engineering collective, and operational platform infrastructure built for enterprise SLA delivery, continuous multi-tenant governance, long-term support, and institutional accountability."
     },
 
     provenPillars: [
@@ -156,7 +156,7 @@ export const CORPORATE_POSITIONING_I18N: Record<Language, CorporatePositioningDa
   },
 
   pt: {
-    specificationDocumentId: "DOC-TRIMINDS-POSITIONING-V1.0",
+    specificationDocumentId: "DOC-TRIMINDSLABS-POSITIONING-V1.0",
     lastAudit: "2026-Q3",
     auditVersion: "V1.0 Consolidada Pós-Auditoria",
     jurisdiction: "União Europeia (Conformidade Estrita GDPR e EU AI Act)",
@@ -164,15 +164,15 @@ export const CORPORATE_POSITIONING_I18N: Record<Language, CorporatePositioningDa
     mission: "Projetar sistemas inteligentes que resolvem problemas reais através de tecnologia confiável, segura e mensurável.",
     vision: "Ajudar a estabelecer um padrão mais elevado na engenharia de sistemas inteligentes que sejam confiáveis, observáveis, seguros e prontos para operação no mundo real.",
 
-    whatTrimindsIs: "A Triminds é uma organização avançada de engenharia de sistemas e IA de produção. Projetamos sistemas inteligentes determinísticos, observáveis e blindados para ambientes corporativos e industriais de alta criticidade.",
+    whatTrimindsIs: "A Trimindslabs é uma organização avançada de engenharia de sistemas e IA de produção. Projetamos sistemas inteligentes determinísticos, observáveis e blindados para ambientes corporativos e industriais de alta criticidade.",
     whatTrimindsBuilds: "Engines corporativas de Trusted Search, fluxos de agentes determinísticos e controlados, plataformas de inteligência geoespacial e camadas de observabilidade e segurança zero-trust para IA.",
     whatTrimindsDoesNotClaimToBe: "Não somos uma agência de modismos em IA generativa, nem um invólucro superficial de LLMs, nem vendedores de algoritmos de caixa-preta opacos. Não implementamos modelos estocásticos sem cercas de validação determinísticas, reranking matemático e rastreabilidade total.",
     whoTrimindsServes: "Infraestruturas corporativas Tier-1, operadoras logísticas transfronteiriças, empresas de satélite e análise geoespacial, instituições financeiras e jurídicas reguladas e organizações de engenharia crítica na Europa e no mundo.",
-    whyTrimindsExists: "Porque a grande maioria das iniciativas de IA corporativa falha em produção devido à falta de determinismo, risco de alucinação, quebras de conformidade e zero observabilidade operacional. A Triminds nasceu para trazer o rigor da engenharia de software e sistemas para a inteligência artificial.",
+    whyTrimindsExists: "Porque a grande maioria das iniciativas de IA corporativa falha em produção devido à falta de determinismo, risco de alucinação, quebras de conformidade e zero observabilidade operacional. A Trimindslabs nasceu para trazer o rigor da engenharia de software e sistemas para a inteligência artificial.",
 
     differenceBetweenTrimindsAndArchitectureLeadership: {
       architectureLeadership: "A liderança em arquitetura de sistemas concebeu os algoritmos fundamentais, heurísticas geoespaciais e a arquitetura dos motores de busca, garantindo rigor técnico e invariância de engenharia.",
-      triminds: "Triminds é a entidade corporativa soberana, o coletivo de engenharia e a infraestrutura de plataforma operacional criada para entregas com SLA corporativo, governança multilocatária contínua, suporte de longo prazo e responsabilidade institucional."
+      triminds: "Trimindslabs é a entidade corporativa soberana, o coletivo de engenharia e a infraestrutura de plataforma operacional criada para entregas com SLA corporativo, governança multilocatária contínua, suporte de longo prazo e responsabilidade institucional."
     },
 
     provenPillars: [
@@ -267,7 +267,7 @@ export const CORPORATE_POSITIONING_I18N: Record<Language, CorporatePositioningDa
   },
 
   es: {
-    specificationDocumentId: "DOC-TRIMINDS-POSITIONING-V1.0",
+    specificationDocumentId: "DOC-TRIMINDSLABS-POSITIONING-V1.0",
     lastAudit: "2026-Q3",
     auditVersion: "V1.0 Consolidada Post-Auditoría",
     jurisdiction: "Unión Europea (Cumplimiento Estricto RGPD y Ley de IA de la UE)",
@@ -275,15 +275,15 @@ export const CORPORATE_POSITIONING_I18N: Record<Language, CorporatePositioningDa
     mission: "Diseñar sistemas inteligentes que resuelven problemas del mundo real a través de tecnología confiable, segura y medible.",
     vision: "Ayudar a establecer un estándar más elevado en la ingeniería de sistemas inteligentes que sean confiables, observables, seguros y listos para operar en el mundo real.",
 
-    whatTrimindsIs: "Triminds es una organización avanzada de ingeniería de sistemas e IA para entornos de producción. Diseñamos sistemas inteligentes determinísticos, observables y blindados para entornos corporativos e industriales críticos.",
+    whatTrimindsIs: "Trimindslabs es una organización avanzada de ingeniería de sistemas e IA para entornos de producción. Diseñamos sistemas inteligentes determinísticos, observables y blindados para entornos corporativos e industriales críticos.",
     whatTrimindsBuilds: "Motores corporativos de Trusted Search, flujos de agentes deterministas y controlados, plataformas de inteligencia geoespacial y capas de observabilidad y seguridad zero-trust para IA.",
     whatTrimindsDoesNotClaimToBe: "No somos una agencia de modas en IA generativa, ni un envoltorio superficial de LLMs, ni vendedores de algoritmos de caja negra opacos. No desplegamos modelos estocásticos sin vallas determinísticas de validación, reranking matemático y trazabilidad total.",
     whoTrimindsServes: "Infraestructuras empresariales Tier-1, operadores logísticos transfronterizos, compañías de satélites y análisis geoespacial, entidades financieras y legales reguladas y firmas de ingeniería crítica en Europa y a nivel global.",
-    whyTrimindsExists: "Porque la gran mayoría de proyectos corporativos de IA fracasa en producción por falta de determinismo, riesgo de alucinación, fallos de cumplimiento normativo y nula observabilidad operativa. Triminds nació para aplicar el rigor de la ingeniería de software y sistemas a la inteligencia artificial.",
+    whyTrimindsExists: "Porque la gran mayoría de proyectos corporativos de IA fracasa en producción por falta de determinismo, riesgo de alucinación, fallos de cumplimiento normativo y nula observabilidad operativa. Trimindslabs nació para aplicar el rigor de la ingeniería de software y sistemas a la inteligencia artificial.",
 
     differenceBetweenTrimindsAndArchitectureLeadership: {
       architectureLeadership: "El liderazgo en arquitectura de sistemas diseñó los algoritmos base, las heurísticas geoespaciales y la arquitectura de los motores de búsqueda, asegurando rigor técnico e invariancia de ingeniería.",
-      triminds: "Triminds es la entidad corporativa soberana, el colectivo de ingeniería y la infraestructura de plataforma operativa concebida para entregas con SLA empresarial, gobernanza multinquilino continua, soporte a largo plazo y responsabilidad institucional."
+      triminds: "Trimindslabs es la entidad corporativa soberana, el colectivo de ingeniería y la infraestructura de plataforma operativa concebida para entregas con SLA empresarial, gobernanza multinquilino continua, soporte a largo plazo y responsabilidad institucional."
     },
 
     provenPillars: [
@@ -388,35 +388,35 @@ export const TECHNICAL_VOCABULARY_I18N: Record<Language, VocabularyTerm[]> = {
       shortDefinition: "A hybrid retrieval engine combining lexical determinism (BM25/sparse) with dense neural embeddings and secondary cross-encoder reranking.",
       fullNarrative: "Unlike basic vector-only search that frequently retrieves semantically similar but factually contradictory documents, Trusted Search employs multi-stage verification to guarantee factual provenance and citation integrity.",
       contrastingAntiPattern: "Naive vector cosine similarity against unverified chunk databases.",
-      productionImplementation: "Triminds Search Core (Qdrant / Milvus + BGE-Reranker-Large + BM25 reciprocal rank fusion)."
+      productionImplementation: "Trimindslabs Search Core (Qdrant / Milvus + BGE-Reranker-Large + BM25 reciprocal rank fusion)."
     },
     {
       term: "Trust Before Generation",
       shortDefinition: "Architectural mandate: when a query can be satisfied deterministically or through exact verified retrieval, generative synthesis is strictly bypassed.",
       fullNarrative: "Generative models are probabilistic; adding generation to a problem that requires factual certainty introduces unnecessary entropy. If the data permits a direct, verified answer, we present it deterministically.",
       contrastingAntiPattern: "Passing every query through an LLM prompt wrapper even when an exact database or document quote already answers it.",
-      productionImplementation: "Triminds Deterministic Answer Gate with confidence threshold checks before fallback generative dispatch."
+      productionImplementation: "Trimindslabs Deterministic Answer Gate with confidence threshold checks before fallback generative dispatch."
     },
     {
       term: "Trusted AI",
       shortDefinition: "Artificial intelligence systems engineered with formal safety bounds, deterministic guardrails, and verifiable output provenance.",
       fullNarrative: "AI systems where hallucinations are prevented before reaching user interfaces through semantic boundary fences, schema enforcement, and fact-checking validators.",
       contrastingAntiPattern: "Unchecked chat interfaces relying on system prompt prayers like 'Please do not hallucinate'.",
-      productionImplementation: "Triminds Guardrail Engine with Pydantic JSON schema locks and regex verification layers."
+      productionImplementation: "Trimindslabs Guardrail Engine with Pydantic JSON schema locks and regex verification layers."
     },
     {
       term: "Production-Oriented AI",
       shortDefinition: "Machine learning workflows engineered to meet strict p99 latency SLOs, cost-per-token ceilings, cold-start guarantees, and fault tolerance.",
       fullNarrative: "Transitioning research-grade neural models into resilient production services with automated rollback, circuit breaking, and canary deployments.",
       contrastingAntiPattern: "Jupyter notebooks deployed directly as fragile microservices without load or error handling.",
-      productionImplementation: "Triminds Containerized Inference Engines on Google Cloud Run with autoscaling to zero and health probes."
+      productionImplementation: "Trimindslabs Containerized Inference Engines on Google Cloud Run with autoscaling to zero and health probes."
     },
     {
       term: "AI Observability",
       shortDefinition: "Full-stack instrumentation tracking token spend, semantic drift, latency distribution, guardrail trigger rates, and embedding space cohesion.",
       fullNarrative: "Real-time telemetry and distributed tracing across every hop in the LLM pipeline, from vector lookup to token emission.",
       contrastingAntiPattern: "Treating external LLM APIs as black-box services with no logging beyond HTTP 200 counts.",
-      productionImplementation: "OpenTelemetry + Prometheus metrics + Triminds Structured Log Schema."
+      productionImplementation: "OpenTelemetry + Prometheus metrics + Trimindslabs Structured Log Schema."
     },
     {
       term: "Deterministic/Controlled Agentic Workflows",
@@ -433,35 +433,35 @@ export const TECHNICAL_VOCABULARY_I18N: Record<Language, VocabularyTerm[]> = {
       shortDefinition: "Mecanismo de recuperação híbrido que combina determinismo lexical (BM25/esparso) com embeddings neurais densos e reranking secundário por cross-encoder.",
       fullNarrative: "Diferente da busca vetorial simples que frequentemente recupera documentos semanticamente semelhantes porém factualmente contraditórios, a Busca Confiável emprega verificação em múltiplos estágios para garantir proveniência factual e integridade de citação.",
       contrastingAntiPattern: "Similaridade de cosseno vetorial ingênua sobre bancos de chunks não verificados.",
-      productionImplementation: "Triminds Search Core (Qdrant / Milvus + BGE-Reranker-Large + fusão por Reciprocal Rank Fusion BM25)."
+      productionImplementation: "Trimindslabs Search Core (Qdrant / Milvus + BGE-Reranker-Large + fusão por Reciprocal Rank Fusion BM25)."
     },
     {
       term: "Trust Before Generation (Confiança Antes da Geração)",
       shortDefinition: "Diretriz arquitetural: quando uma consulta pode ser atendida de forma determinística ou por recuperação verificada exata, a síntese generativa é estritamente evitada.",
       fullNarrative: "Modelos generativos são probabilísticos; adicionar geração a um problema que exige certeza factual introduz entropia desnecessária. Se os dados permitem uma resposta direta e verificada, nós a apresentamos deterministicamente.",
       contrastingAntiPattern: "Passar todas as consultas por prompts de LLM mesmo quando um banco de dados ou citação exata de documento já fornece a resposta.",
-      productionImplementation: "Triminds Deterministic Answer Gate com verificação de limiar de confiança antes do envio generativo de fallback."
+      productionImplementation: "Trimindslabs Deterministic Answer Gate com verificação de limiar de confiança antes do envio generativo de fallback."
     },
     {
       term: "Trusted AI (IA Confiável)",
       shortDefinition: "Sistemas de inteligência artificial projetados com limites formais de segurança, guardrails determinísticos e proveniência verificável de saída.",
       fullNarrative: "Sistemas de IA onde alucinações são impedidas antes de atingir interfaces de usuário por meio de cercas semânticas, aplicação de esquemas rigorosos e validadores de checagem de fatos.",
       contrastingAntiPattern: "Interfaces de chat abertas dependentes de súplicas no system prompt como 'Por favor não alucine'.",
-      productionImplementation: "Triminds Guardrail Engine com travas de esquema JSON via Pydantic e camadas de validação por expressões regulares."
+      productionImplementation: "Trimindslabs Guardrail Engine com travas de esquema JSON via Pydantic e camadas de validação por expressões regulares."
     },
     {
       term: "Production-Oriented AI (IA Orientada a Produção)",
       shortDefinition: "Fluxos de machine learning projetados para cumprir rigorosos SLOs de latência p99, limites de custo por token, garantias de cold-start e tolerância a falhas.",
       fullNarrative: "Transição de modelos neurais de laboratório para serviços de produção resilientes com rollback automatizado, circuit breakers e deploys canário.",
       contrastingAntiPattern: "Notebooks Jupyter implantados diretamente como microsserviços frágeis sem tratamento de carga ou falhas.",
-      productionImplementation: "Motores de inferência conteinerizados da Triminds no Google Cloud Run com autoescala a zero e sondas de integridade (health probes)."
+      productionImplementation: "Motores de inferência conteinerizados da Trimindslabs no Google Cloud Run com autoescala a zero e sondas de integridade (health probes)."
     },
     {
       term: "AI Observability (Observabilidade de IA)",
       shortDefinition: "Instrumentação full-stack monitorando consumo de tokens, deriva semântica, distribuição de latência, taxa de acionamento de guardrails e coesão do espaço de embeddings.",
       fullNarrative: "Telemetria em tempo real e rastreamento distribuído em cada salto do pipeline de LLM, desde a busca vetorial até a emissão de cada token.",
       contrastingAntiPattern: "Tratar APIs externas de LLM como caixas-pretas sem registros além da contagem de códigos HTTP 200.",
-      productionImplementation: "Métricas OpenTelemetry + Prometheus + Esquema Estruturado de Logs Triminds."
+      productionImplementation: "Métricas OpenTelemetry + Prometheus + Esquema Estruturado de Logs Trimindslabs."
     },
     {
       term: "Deterministic/Controlled Agentic Workflows (Fluxos de Agentes Determinísticos)",
@@ -478,35 +478,35 @@ export const TECHNICAL_VOCABULARY_I18N: Record<Language, VocabularyTerm[]> = {
       shortDefinition: "Motor de recuperación híbrido que combina determinismo léxico (BM25/disperso) con embeddings neuronales densos y reranking secundario mediante cross-encoder.",
       fullNarrative: "A diferencia de la búsqueda vectorial básica que con frecuencia recupera documentos semánticamente similares pero factualmente contradictorios, Trusted Search emplea verificación en múltiples etapas para garantizar la proveniencia factual y la integridad de citas.",
       contrastingAntiPattern: "Similitud coseno vectorial ingenua sobre bases de datos de fragmentos sin verificar.",
-      productionImplementation: "Triminds Search Core (Qdrant / Milvus + BGE-Reranker-Large + fusión por Reciprocal Rank Fusion BM25)."
+      productionImplementation: "Trimindslabs Search Core (Qdrant / Milvus + BGE-Reranker-Large + fusión por Reciprocal Rank Fusion BM25)."
     },
     {
       term: "Trust Before Generation (Confianza Antes de la Generación)",
       shortDefinition: "Mandato arquitectónico: cuando una consulta puede satisfacerse de forma determinística o mediante recuperación verificada exacta, la síntesis generativa se omite estrictamente.",
       fullNarrative: "Los modelos generativos son probabilísticos; añadir generación a un problema que requiere certeza factual introduce entropía innecesaria. Si los datos permiten una respuesta directa y verificada, la presentamos de forma determinista.",
       contrastingAntiPattern: "Pasar cada consulta a través de un prompt de LLM incluso cuando una base de datos o cita exacta de documento ya proporciona la respuesta.",
-      productionImplementation: "Triminds Deterministic Answer Gate con comprobaciones de umbral de confianza antes del despacho generativo de respaldo.",
+      productionImplementation: "Trimindslabs Deterministic Answer Gate con comprobaciones de umbral de confianza antes del despacho generativo de respaldo.",
     },
     {
       term: "Trusted AI (IA Confiable)",
       shortDefinition: "Sistemas de inteligencia artificial diseñados con límites formales de seguridad, guardrails deterministas y proveniencia verificable de salida.",
       fullNarrative: "Sistemas de IA donde las alucinaciones se previenen antes de llegar a las interfaces de usuario mediante vallas de contención semántica, cumplimiento de esquemas y validadores de contraste factual.",
       contrastingAntiPattern: "Interfaces de chat sin controles dependientes de peticiones en el system prompt como 'Por favor no alucines'.",
-      productionImplementation: "Triminds Guardrail Engine con bloqueos de esquema JSON mediante Pydantic y capas de verificación por expresiones regulares.",
+      productionImplementation: "Trimindslabs Guardrail Engine con bloqueos de esquema JSON mediante Pydantic y capas de verificación por expresiones regulares.",
     },
     {
       term: "Production-Oriented AI (IA Orientada a Producción)",
       shortDefinition: "Flujos de machine learning diseñados para cumplir con estrictos SLOs de latencia p99, límites de coste por token, garantías de arranque en frío y tolerancia a fallos.",
       fullNarrative: "Transición de modelos neuronales de investigación a servicios de producción resilientes con reversión automática, disyuntores (circuit breakers) y despliegues canary.",
       contrastingAntiPattern: "Notebooks de Jupyter desplegados directamente como microservicios frágiles sin gestión de carga ni control de errores.",
-      productionImplementation: "Motores de inferencia contenerizados de Triminds en Google Cloud Run con autoescalado a cero y sondas de salud (health probes).",
+      productionImplementation: "Motores de inferencia contenerizados de Trimindslabs en Google Cloud Run con autoescalado a cero y sondas de salud (health probes).",
     },
     {
       term: "AI Observability (Observabilidad de IA)",
       shortDefinition: "Instrumentación full-stack que monitoriza consumo de tokens, deriva semántica, distribución de latencia, tasa de activación de guardrails y cohesión del espacio de embeddings.",
       fullNarrative: "Telemetría en tiempo real y trazado distribuido en cada salto del pipeline de LLM, desde la búsqueda vectorial hasta la emisión de cada token.",
       contrastingAntiPattern: "Tratar las APIs externas de LLM como cajas negras sin más registro que el recuento de respuestas HTTP 200.",
-      productionImplementation: "Métricas de OpenTelemetry + Prometheus + Esquema Estructurado de Logs de Triminds.",
+      productionImplementation: "Métricas de OpenTelemetry + Prometheus + Esquema Estructurado de Logs de Trimindslabs.",
     },
     {
       term: "Deterministic/Controlled Agentic Workflows (Flujos de Agentes Deterministas)",
