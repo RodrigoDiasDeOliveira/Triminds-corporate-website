@@ -45,7 +45,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenVocabulary }) 
               <div className="w-8 h-8 rounded-md bg-[#1A1A1A] text-white flex items-center justify-center font-serif text-lg font-bold">
                 T
               </div>
-              <span className="font-mono text-base font-bold tracking-wider text-[#1A1A1A]">TRIMINDS</span>
+              <span className="font-mono text-base font-bold tracking-wider text-[#1A1A1A]">TRIMINDSLABS</span>
               <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-[#1A1A1A] text-white">V1.0-AUDITED</span>
             </div>
             
@@ -100,7 +100,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenVocabulary }) 
                   onClick={() => onNavigate('ai-systems')} 
                   className="hover:text-[#1A1A1A] transition-colors text-left cursor-pointer"
                 >
-                  Triminds Geo AI
+                  Trimindslabs Geo AI
                 </button>
               </li>
               <li>
@@ -108,7 +108,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenVocabulary }) 
                   onClick={() => onNavigate('ai-systems')} 
                   className="hover:text-[#1A1A1A] transition-colors text-left cursor-pointer"
                 >
-                  Triminds Security Platform
+                  Trimindslabs Security Platform
                 </button>
               </li>
               <li>
@@ -116,7 +116,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenVocabulary }) 
                   onClick={() => onNavigate('projects')} 
                   className="hover:text-[#1A1A1A] transition-colors text-left cursor-pointer"
                 >
-                  Triminds Integration Platform
+                  Trimindslabs Integration Platform
                 </button>
               </li>
               <li>
@@ -225,7 +225,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenVocabulary }) 
         {/* Bottom Bar with Copyright, Direct Contact & Verification */}
         <div className="mt-12 pt-8 border-t border-[#D1D1CD] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#70706B]">
           <div className="flex items-center gap-2">
-            <span>© {new Date().getFullYear()} TRIMINDS. {t('footer.allRights')}</span>
+            <span>© {new Date().getFullYear()} TRIMINDSLABS. {t('footer.allRights')}</span>
             <span>•</span>
             <span>{t('footer.directInquiries')}</span>
             <a href="mailto:contato@trimindslabs.com" className="text-[#1A1A1A] font-bold hover:underline">
