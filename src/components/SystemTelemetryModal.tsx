@@ -61,14 +61,14 @@ const SERVICE_SLO_CONTRACTS = [
     hallucinationBound: '0.00% Tolerance'
   },
   { 
-    service: 'Triminds AI Cloud Administrator (MCP Server)', 
+    service: 'Trimindslabs AI Cloud Administrator (MCP Server)', 
     stack: 'Python 3.11+ / FastMCP / AWS, Azure, GCP, OCI / Keyring', 
     targetP95: '< 85ms tool exec', 
     sloUptime: '99.99%',
     hallucinationBound: 'Zero Credential Leakage'
   },
   { 
-    service: 'Triminds Integration Platform (Event & API Mesh)', 
+    service: 'Trimindslabs Integration Platform (Event & API Mesh)', 
     stack: 'Spring Boot 3.x / FastAPI / Redis / OpenTelemetry', 
     targetP95: '< 8ms mediation', 
     sloUptime: '99.99%',
@@ -82,28 +82,28 @@ const SERVICE_SLO_CONTRACTS = [
     hallucinationBound: 'IoU > 93.5%'
   },
   { 
-    service: 'Triminds Logistics Platform (TLP)', 
+    service: 'Trimindslabs Logistics Platform (TLP)', 
     stack: 'Java 17 / Spring Boot 3.3 / DL4J / WebSockets', 
     targetP95: '< 5ms broadcast', 
     sloUptime: '99.99%',
     hallucinationBound: 'Continuous RFID Ingestion'
   },
   { 
-    service: 'Triminds Security Layer', 
+    service: 'Trimindslabs Security Layer', 
     stack: 'Java 21 / Spring Boot 3.x / OPA / Hexagonal', 
     targetP95: '< 1.5ms policy eval', 
     sloUptime: '99.99%',
     hallucinationBound: 'Zero Policy Violations'
   },
   { 
-    service: 'Triminds ObjectScanner V2 Edge Ingestion', 
+    service: 'Trimindslabs ObjectScanner V2 Edge Ingestion', 
     stack: 'Android Native / YOLOv8 / CameraX / Spring Boot', 
     targetP95: '< 120ms frame', 
     sloUptime: '99.95%',
     hallucinationBound: 'mAP > 94.8%'
   },
   { 
-    service: 'Triminds VectorAI (VS Code Extension)', 
+    service: 'Trimindslabs VectorAI (VS Code Extension)', 
     stack: 'TypeScript 5.x / VS Code API / pgvector / Transformers.js', 
     targetP95: '< 15ms local eval', 
     sloUptime: '100% Local', 
@@ -317,7 +317,7 @@ export const SystemTelemetryModal: React.FC<SystemTelemetryModalProps> = ({
             <div>
               <div className="flex items-center gap-2 flex-wrap">
                 <h2 id="telemetry-title" className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#1A1A1A]">
-                  Triminds Ecosystem Observability Dashboard
+                  Trimindslabs Ecosystem Observability Dashboard
                 </h2>
                 <span 
                   id="system-status-badge"
@@ -341,7 +341,7 @@ export const SystemTelemetryModal: React.FC<SystemTelemetryModalProps> = ({
                 </span>
               </div>
               <p className="text-[10px] text-[#70706B] mt-0.5">
-                Consumer & Presentation Layer for authoritative evidence from <code className="font-bold text-[#1A1A1A]">Triminds-ecosystem-audit</code>
+                Consumer & Presentation Layer for authoritative evidence from <code className="font-bold text-[#1A1A1A]">Trimindslabs-ecosystem-audit</code>
               </p>
             </div>
           </div>
@@ -386,7 +386,7 @@ export const SystemTelemetryModal: React.FC<SystemTelemetryModalProps> = ({
               role="button"
               aria-busy={isLoading}
               aria-label="Atualizar telemetria de auditoria do ecossistema"
-              title="Refresh authoritative audit data from Triminds-ecosystem-audit"
+              title="Refresh authoritative audit data from Trimindslabs-ecosystem-audit"
               className={`p-1.5 px-2.5 rounded-lg border border-[#D1D1CD] text-[#70706B] hover:text-[#1A1A1A] hover:bg-[#F4F4F1] transition-colors cursor-pointer flex items-center gap-1.5 text-[11px] ${isLoading ? 'loading' : ''}`}
             >
               <RefreshCw className={`w-3.5 h-3.5 ${isLoading ? 'animate-spin text-emerald-600' : ''}`} />
@@ -899,7 +899,7 @@ export const SystemTelemetryModal: React.FC<SystemTelemetryModalProps> = ({
         {/* Modal Footer Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between p-3.5 sm:p-4 border-t border-[#D1D1CD] bg-white text-[11px] gap-2">
           <div className="flex items-center gap-2 text-[#70706B] text-[10px] font-mono flex-wrap">
-            <span>Authoritative Source: Triminds-ecosystem-audit</span>
+            <span>Authoritative Source: Trimindslabs-ecosystem-audit</span>
             <span>•</span>
             <span>
               Refreshed: <strong className="text-[#1A1A1A]">{lastUpdated ? new Date(lastUpdated).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }) : 'Initial'}</strong>
