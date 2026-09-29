@@ -19,7 +19,7 @@ export const AUDIT_REALITY_DATA: Record<Language, LocalizedAuditItem[]> = {
       claim: 'We solve problems, not technology trends.',
       githubEvidence: 'Trusted Compliance Agent: Trajectory from vector search -> identification of semantic false positives -> 2-stage retrieval -> neural cross-encoder reranking -> deterministic fallback. Multi-provider AI architecture avoiding single-vendor lock-in.',
       analysis: 'Technology changed strictly because the problem required it, not to inject more AI artificially.',
-      architecturalVerdict: 'Core foundational pillar of Triminds architecture.'
+      architecturalVerdict: 'Core foundational pillar of Trimindslabs architecture.'
     },
     {
       id: 'trust-before-generation',
@@ -28,7 +28,7 @@ export const AUDIT_REALITY_DATA: Record<Language, LocalizedAuditItem[]> = {
       claim: 'When a problem can be solved deterministically, generation should not be the default.',
       githubEvidence: 'Architecture evolution: Traditional RAG -> Trusted Search -> Deterministic answer where possible -> Validated generative fallback where necessary.',
       analysis: 'Adding generative layers without necessity degrades reliability. If data allows a deterministic answer, use it; if using AI, strictly fence and validate it.',
-      architecturalVerdict: 'One of the most distinctive architectural signatures of Triminds.'
+      architecturalVerdict: 'One of the most distinctive architectural signatures of Trimindslabs.'
     },
     {
       id: 'trust-is-engineered',
@@ -37,7 +37,7 @@ export const AUDIT_REALITY_DATA: Record<Language, LocalizedAuditItem[]> = {
       claim: 'Trust must be engineered into the system, not declared as marketing.',
       githubEvidence: 'Trusted Compliance + Security Layer: Reduction of semantic false-positives via BGE cross-encoder, PII pseudonymization, cryptographic hashing of retrieved chunks, fail-closed guardrails.',
       analysis: 'Trust is an architectural consequence. Audits identified vulnerabilities, and they were methodically triaged, patched, and re-verified.',
-      architecturalVerdict: 'Primary structural pillar of all Triminds platforms.'
+      architecturalVerdict: 'Primary structural pillar of all Trimindslabs platforms.'
     },
     {
       id: 'security-by-design',
@@ -108,8 +108,8 @@ export const AUDIT_REALITY_DATA: Record<Language, LocalizedAuditItem[]> = {
       status: 'consolidating',
       claim: 'We design systems to be observable, diagnosable, and continuously improvable.',
       githubEvidence: 'Cloud Logging, Cloud Monitoring, OpenTelemetry tracing in new services, latency metrics, and structured JSON logs.',
-      analysis: 'The philosophy is consolidated; universal rollout across 100% of legacy projects is ongoing under the Triminds Observability Standard.',
-      architecturalVerdict: 'Corporate standard in consolidation (Roadmap item: Triminds Observability Standard).'
+      analysis: 'The philosophy is consolidated; universal rollout across 100% of legacy projects is ongoing under the Trimindslabs Observability Standard.',
+      architecturalVerdict: 'Corporate standard in consolidation (Roadmap item: Trimindslabs Observability Standard).'
     },
     {
       id: 'ai-with-purpose',
@@ -157,7 +157,7 @@ export const AUDIT_REALITY_DATA: Record<Language, LocalizedAuditItem[]> = {
       claim: 'Resolvemos problemas, não modismos tecnológicos.',
       githubEvidence: 'Trusted Compliance Agent: Trajetória de busca vetorial -> identificação de falsos positivos semânticos -> busca em dois estágios -> neural cross-encoder reranking -> resposta determinística. Arquitetura de IA multi-provider evitando dependência de fornecedor.',
       analysis: 'A tecnologia mudou estritamente porque o problema exigiu, e não para adicionar "mais IA" de forma artificial.',
-      architecturalVerdict: 'Pilar central e inegociável da engenharia Triminds.'
+      architecturalVerdict: 'Pilar central e inegociável da engenharia Trimindslabs.'
     },
     {
       id: 'trust-before-generation',
@@ -166,7 +166,7 @@ export const AUDIT_REALITY_DATA: Record<Language, LocalizedAuditItem[]> = {
       claim: 'Quando um problema pode ser resolvido de forma determinística, a geração não deve ser o padrão.',
       githubEvidence: 'Evolução arquitetural: RAG Tradicional -> Trusted Search -> Resposta determinística onde possível -> IA / Fallback generativo validado onde necessário.',
       analysis: 'Adicionar camadas generativas sem necessidade degrada a confiabilidade. Se os dados já permitem resposta confiável, não devemos adicionar geração apenas para parecer "mais IA".',
-      architecturalVerdict: 'Uma das maiores assinaturas arquiteturais da Triminds.'
+      architecturalVerdict: 'Uma das maiores assinaturas arquiteturais da Trimindslabs.'
     },
     {
       id: 'trust-is-engineered',
@@ -246,8 +246,8 @@ export const AUDIT_REALITY_DATA: Record<Language, LocalizedAuditItem[]> = {
       status: 'consolidating',
       claim: 'Projetamos sistemas para serem observáveis, diagnosticáveis e continuamente aprimoráveis.',
       githubEvidence: 'Cloud Logging, Cloud Monitoring, rastreamento OpenTelemetry, métricas de latência p99 e esquemas de log estruturados em JSON.',
-      analysis: 'A filosofia está consolidada; a padronização universal em 100% dos serviços está em andamento sob o Triminds Observability Standard.',
-      architecturalVerdict: 'Compromisso em consolidação (Iniciativa: Triminds Observability Standard).'
+      analysis: 'A filosofia está consolidada; a padronização universal em 100% dos serviços está em andamento sob o Trimindslabs Observability Standard.',
+      architecturalVerdict: 'Compromisso em consolidação (Iniciativa: Trimindslabs Observability Standard).'
     },
     {
       id: 'ai-with-purpose',
@@ -295,7 +295,7 @@ export const AUDIT_REALITY_DATA: Record<Language, LocalizedAuditItem[]> = {
       claim: 'Resolvemos problemas, no tendencias tecnológicas.',
       githubEvidence: 'Trusted Compliance Agent: Trayectoria de búsqueda vectorial -> detección de falsos positivos semánticos -> búsqueda en dos etapas -> reranking neuronal cross-encoder -> respuesta determinística. Arquitectura de IA multi-proveedor.',
       analysis: 'La tecnología evolucionó estrictamente porque el problema lo exigía, no para agregar más IA de forma artificial.',
-      architecturalVerdict: 'Pilar fundacional e innegociable de Triminds.'
+      architecturalVerdict: 'Pilar fundacional e innegociable de Trimindslabs.'
     },
     {
       id: 'trust-before-generation',
@@ -304,7 +304,7 @@ export const AUDIT_REALITY_DATA: Record<Language, LocalizedAuditItem[]> = {
       claim: 'Cuando un problema puede resolverse de forma determinística, la generación no debe ser la opción por defecto.',
       githubEvidence: 'Evolución arquitectónica: RAG Tradicional -> Trusted Search -> Respuesta determinística donde sea posible -> IA / Fallback generativo validado.',
       analysis: 'Agregar capas generativas sin necesidad degrada la fiabilidad. Si los datos permiten una respuesta determinística, se utiliza directamente.',
-      architecturalVerdict: 'Una de las firmas arquitectónicas más distintivas de Triminds.'
+      architecturalVerdict: 'Una de las firmas arquitectónicas más distintivas de Trimindslabs.'
     },
     {
       id: 'trust-is-engineered',
@@ -384,8 +384,8 @@ export const AUDIT_REALITY_DATA: Record<Language, LocalizedAuditItem[]> = {
       status: 'consolidating',
       claim: 'Diseñamos sistemas para ser observables, diagnosticables y continuamente mejorables.',
       githubEvidence: 'Cloud Logging, Cloud Monitoring, rastreo OpenTelemetry, métricas de latencia y esquemas de registro JSON estructurados.',
-      analysis: 'La filosofía está consolidada; el despliegue universal en el 100% de los servicios avanza bajo el Triminds Observability Standard.',
-      architecturalVerdict: 'Compromiso en consolidación (Iniciativa: Triminds Observability Standard).'
+      analysis: 'La filosofía está consolidada; el despliegue universal en el 100% de los servicios avanza bajo el Trimindslabs Observability Standard.',
+      architecturalVerdict: 'Compromiso en consolidación (Iniciativa: Trimindslabs Observability Standard).'
     },
     {
       id: 'ai-with-purpose',
