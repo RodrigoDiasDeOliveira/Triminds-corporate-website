@@ -98,7 +98,7 @@ export const AI_SYSTEMS: AISystem[] = [
   },
   {
     id: "geospatial-ai",
-    name: "Triminds Geo AI",
+    name: "Trimindslabs Geo AI",
     headline: "Operational Earth observation with deterministic geospatial analysis",
     description: "The current Geo AI V4 implementation turns real Copernicus Sentinel-2 L2A observations into traceable analytical evidence and GeoJSON outputs. The production architecture is intentionally presented separately from future GPU and deep-learning directions.",
     keyCapabilities: [
@@ -142,7 +142,7 @@ export const AI_SYSTEMS: AISystem[] = [
   },
   {
     id: "security-observability",
-    name: "Triminds Security Platform",
+    name: "Trimindslabs Security Platform",
     headline: "Zero-trust security, policy enforcement and observable AI boundaries",
     description: "A Java/Spring security platform built around policy enforcement, identity and access controls, auditability and operational observability. The public site presents the implemented architecture without inventing a universal gateway SLA.",
     keyCapabilities: [
