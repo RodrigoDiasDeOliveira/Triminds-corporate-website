@@ -7,7 +7,7 @@ export const RESEARCH_ARTICLES: ResearchArticle[] = [
     category: "Retrieval Architecture",
     readTime: "9 min read",
     publishedDate: "August 2026",
-    abstract: "The early consensus that vector similarity search (k-NN) alone constitutes a viable enterprise retrieval system has collapsed under production conditions. This paper outlines the mathematical failure modes of ungrounded dense embeddings and introduces the Triminds 3-tier Trusted Retrieval Architecture combining reciprocal rank fusion, cross-encoder neural reranking, and cryptographic citation provenance.",
+    abstract: "The early consensus that vector similarity search (k-NN) alone constitutes a viable enterprise retrieval system has collapsed under production conditions. This paper outlines the mathematical failure modes of ungrounded dense embeddings and introduces the Trimindslabs 3-tier Trusted Retrieval Architecture combining reciprocal rank fusion, cross-encoder neural reranking, and cryptographic citation provenance.",
     keyTakeaways: [
       "Cosine distance in high-dimensional embedding spaces often collapses semantic similarity with factual agreement.",
       "Hybrid search (BM25 + Dense) achieves a 28% higher Recall@10 than dense-only search on dense technical corpora.",
@@ -19,8 +19,8 @@ export const RESEARCH_ARTICLES: ResearchArticle[] = [
         content: "In naive RAG setups, documents are chunked into uniform token spans, passed through an embedding model (e.g., text-embedding-3-large), and indexed in a vector database. At query time, top-k chunks with highest cosine similarity are stuffed directly into the generation prompt. In production, this fails because dense embeddings are semantic topic matchers, not fact verifiers. A sentence asserting 'Contract clause 4.2 was terminated in 2024' has a 0.89 cosine similarity with 'Contract clause 4.2 remains in full legal force'. The generator sees both, picks the dominant linguistic token, and produces a hallucinated legal catastrophe."
       },
       {
-        heading: "2. The Triminds Trusted Retrieval Pipeline",
-        content: "To establish absolute citation provenance, Triminds replaces naive vector search with a tiered hybrid pipeline. Stage 1 executes parallel retrieval: BM25 sparse keyword matching captures exact identifiers, serial numbers, and article numbers, while dense HNSW indexing retrieves semantic breadth. Stage 2 applies Reciprocal Rank Fusion (RRF). Stage 3 feeds the top 50 candidates through a heavy cross-encoder neural reranker that models token-level interactions across query and document pairs.",
+        heading: "2. The Trimindslabs Trusted Retrieval Pipeline",
+        content: "To establish absolute citation provenance, Trimindslabs replaces naive vector search with a tiered hybrid pipeline. Stage 1 executes parallel retrieval: BM25 sparse keyword matching captures exact identifiers, serial numbers, and article numbers, while dense HNSW indexing retrieves semantic breadth. Stage 2 applies Reciprocal Rank Fusion (RRF). Stage 3 feeds the top 50 candidates through a heavy cross-encoder neural reranker that models token-level interactions across query and document pairs.",
         codeSnippet: `// Reciprocal Rank Fusion & Cross-Encoder Pipeline
 async function trustedRetrieval(query: string, corpusId: string): Promise<VerifiedChunk[]> {
   const [lexicalHits, denseHits] = await Promise.all([
@@ -42,11 +42,11 @@ async function trustedRetrieval(query: string, corpusId: string): Promise<Verifi
       },
       {
         heading: "3. Results and Production Implications",
-        content: "In benchmark tests across 45,000 regulatory documents, Triminds Trusted Retrieval achieved zero critical citation hallucinations while maintaining a p95 retrieval latency of 142ms. For production enterprise systems, this trade-off—a small computational reranking cost for guaranteed factual integrity—is not optional; it is the prerequisite for real-world deployment."
+        content: "In benchmark tests across 45,000 regulatory documents, Trimindslabs Trusted Retrieval achieved zero critical citation hallucinations while maintaining a p95 retrieval latency of 142ms. For production enterprise systems, this trade-off—a small computational reranking cost for guaranteed factual integrity—is not optional; it is the prerequisite for real-world deployment."
       }
     ],
     conclusions: "Enterprise AI cannot rely on probabilistic retrieval alone. Reliable generation requires multi-stage verification, structural boundary checking, and deterministic provenance.",
-    doiOrReference: "TRIMINDS-RES-2026-08 // Trusted Retrieval Specification"
+    doiOrReference: "TRIMINDSLABS-RES-2026-08 // Trusted Retrieval Specification"
   },
   {
     id: "why-deterministic-search-still-matters",
@@ -88,7 +88,7 @@ function executeVerifiedAgentAction(action: AgentAction): ExecutionResult {
       }
     ],
     conclusions: "The future of AI is not purely neural. The most reliable intelligent systems are neuro-symbolic: marrying the semantic comprehension of neural nets with the unflinching determinism of traditional computer science.",
-    doiOrReference: "TRIMINDS-RES-2026-07 // Deterministic Systems"
+    doiOrReference: "TRIMINDSLABS-RES-2026-07 // Deterministic Systems"
   },
   {
     id: "designing-observable-ai-systems",
@@ -96,7 +96,7 @@ function executeVerifiedAgentAction(action: AgentAction): ExecutionResult {
     category: "AI Observability",
     readTime: "11 min read",
     publishedDate: "June 2026",
-    abstract: "Traditional APM tools are blind to the failure modes of large language models. This research paper presents Triminds' telemetry framework for monitoring generative models, measuring semantic drift, tracking token burn rates, and enforcing continuous runtime safety.",
+    abstract: "Traditional APM tools are blind to the failure modes of large language models. This research paper presents Trimindslabs' telemetry framework for monitoring generative models, measuring semantic drift, tracking token burn rates, and enforcing continuous runtime safety.",
     keyTakeaways: [
       "Standard HTTP 200 monitoring fails to detect catastrophic silent failures such as semantic degradation and prompt injection.",
       "Real-time token telemetry allows precise cost attribution down to tenant, user, and agentic reasoning step.",
@@ -108,16 +108,16 @@ function executeVerifiedAgentAction(action: AgentAction): ExecutionResult {
         content: "When an API microservice fails, it returns a 500 error or spikes response latency. When an LLM fails, it gracefully returns a 200 OK containing completely fabricated information or a leaked internal system prompt. To treat an AI system as production software, we must monitor semantic state transitions, token probability distributions, and prompt injection vector distances in real-time."
       },
       {
-        heading: "2. The Triminds AI Telemetry Matrix",
+        heading: "2. The Trimindslabs AI Telemetry Matrix",
         content: "We implement an observability pipeline recording four cardinal AI signals: (1) Prompt & Completion Token Economics, (2) Vector Retrieval Distance Distributions, (3) Guardrail Boundary Interceptions, and (4) End-to-End Reasoning Step Latency. This telemetry is streamed asynchronously to Prometheus and OpenTelemetry collectors with zero impact on user-facing streaming response times."
       }
     ],
     conclusions: "You cannot manage what you cannot observe. AI systems without semantic observability are liabilities waiting to materialize.",
-    doiOrReference: "TRIMINDS-RES-2026-06 // AI Telemetry Framework"
+    doiOrReference: "TRIMINDSLABS-RES-2026-06 // AI Telemetry Framework"
   },
   {
     id: "production-readiness-checklist",
-    title: "Production Readiness for AI Applications: The Triminds 10-Point Engineering Standard",
+    title: "Production Readiness for AI Applications: The Trimindslabs 10-Point Engineering Standard",
     category: "Architecture & DevOps",
     readTime: "8 min read",
     publishedDate: "May 2026",
@@ -134,7 +134,7 @@ function executeVerifiedAgentAction(action: AgentAction): ExecutionResult {
       }
     ],
     conclusions: "Adopting this standard prevents the common transition failure where promising prototypes crumble under real-world enterprise load.",
-    doiOrReference: "TRIMINDS-STD-2026-05 // Production Standard V2"
+    doiOrReference: "TRIMINDSLABS-STD-2026-05 // Production Standard V2"
   }
 
   ,
@@ -161,11 +161,11 @@ function executeVerifiedAgentAction(action: AgentAction): ExecutionResult {
       },
       {
         heading: "Portfolio Role",
-        content: "DetectorHallucination belongs to the Triminds Research / Experimental portfolio layer. It is intentionally not represented as an operationally monitored product and should not contribute to production health, CI telemetry or operational dashboard status."
+        content: "DetectorHallucination belongs to the Trimindslabs Research / Experimental portfolio layer. It is intentionally not represented as an operationally monitored product and should not contribute to production health, CI telemetry or operational dashboard status."
       }
     ],
     conclusions: "The project is retained as research evidence for trustworthy AI, claim analysis and evidence-based verification. Its value in the portfolio is the engineering exploration and reusable concepts, not a production guarantee of hallucination-free AI.",
-    doiOrReference: "TRIMINDS-RES-DET-2026 // DetectorHallucination Research Repository",
+    doiOrReference: "TRIMINDSLABS-RES-DET-2026 // DetectorHallucination Research Repository",
     repositoryUrl: "https://github.com/RodrigoDiasDeOliveira/DetectorHallucination",
     portfolioLabel: "Research / Experimental",
     operationalMonitoring: "excluded"
@@ -193,11 +193,11 @@ function executeVerifiedAgentAction(action: AgentAction): ExecutionResult {
       },
       {
         heading: "Portfolio Role",
-        content: "EyeGuardian belongs to the Triminds Research / Experimental layer. It is included in the technology portfolio for research continuity and intellectual evidence, but it is not treated as an operational product and does not contribute to the operational observability dashboard."
+        content: "EyeGuardian belongs to the Trimindslabs Research / Experimental layer. It is included in the technology portfolio for research continuity and intellectual evidence, but it is not treated as an operational product and does not contribute to the operational observability dashboard."
       }
     ],
     conclusions: "The project records an experimental line of research around assistive AI, computer vision and multimodal accessibility. Its portfolio purpose is to preserve and expose the research trajectory without overstating production maturity.",
-    doiOrReference: "TRIMINDS-RES-EYE-2026 // EyeGuardian Research Repository",
+    doiOrReference: "TRIMINDSLABS-RES-EYE-2026 // EyeGuardian Research Repository",
     repositoryUrl: "https://github.com/RodrigoDiasDeOliveira/EyeGuardian",
     portfolioLabel: "Research / Experimental",
     operationalMonitoring: "excluded"
