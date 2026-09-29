@@ -10,7 +10,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: "what-we-built",
     truthStatus: "implemented",
     honestScope: "Designed for institutional legal compliance with character-offset provenance and deterministic fallback gates.",
-    whatItProves: "Proves that Triminds builds verifiable retrieval systems for mission-critical legal compliance where factual hallucination is strictly zero-tolerance.",
+    whatItProves: "Proves that Trimindslabs builds verifiable retrieval systems for mission-critical legal compliance where factual hallucination is strictly zero-tolerance.",
     problem: "Financial and legal institutions faced 45-day review latencies analyzing multi-jurisdiction regulatory directives. Standard probabilistic RAG models generated plausible yet legally invalid article citations, creating severe legal liabilities under the EU AI Act High-Risk frameworks.",
     context: "Operating under strict EU AI Act High-Risk Category criteria, the system requires source document provenance down to character-level bounding boxes and cryptographic token hashing.",
     architecture: {
@@ -88,14 +88,14 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     id: "triminds-geo-ai",
-    title: "Triminds Geo AI",
+    title: "Trimindslabs Geo AI",
     subtitle: "High-Resolution Geospatial Vectorization & Satellite Anomaly Inference",
     tag: "Geospatial AI / Computer Vision",
     sector: "Aerospace, Environmental & Critical Infrastructure",
     category: "what-we-built",
     truthStatus: "implemented",
     honestScope: "Engineered for satellite multi-spectral raster ingestion, automated tiling, and spatial vector indexing.",
-    whatItProves: "Proves Triminds possesses deep domain engineering in high-dimensional spatial data, raster/vector transformations, and parallel image inference pipelines.",
+    whatItProves: "Proves Trimindslabs possesses deep domain engineering in high-dimensional spatial data, raster/vector transformations, and parallel image inference pipelines.",
     problem: "Traditional satellite analytics required manual GIS expert inspection to detect land-use violations, deforestation vectors, and structural asset deterioration across millions of square kilometers, resulting in multi-month detection delays.",
     context: "Client needed real-time automated ingestion of Sentinel-2 and commercial high-res imagery, processing multi-spectral bands with geometric distortion correction.",
     architecture: {
@@ -173,14 +173,14 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     id: "triminds-logistics-platform",
-    title: "TLP - Triminds Logistics Platform",
+    title: "TLP - Trimindslabs Logistics Platform",
     subtitle: "Real-Time Logistics SaaS with RFID Event Ingestion & Machine Learning Traceability",
     tag: "Logistics SaaS / Event Ingestion",
     sector: "Warehouse Automation & Supply Chain Traceability",
     category: "what-we-built",
     truthStatus: "implemented",
     honestScope: "Designed as a multi-tenant logistics platform with automated RFID reader simulation, live telemetry event ingestion, operational KPI dashboards, and ML predictions.",
-    whatItProves: "Proves Triminds builds production enterprise backends in Java 17, Spring Boot 3.3, and React 18, handling high-frequency telemetry event ingestion with real-time WebSocket distribution and deep learning models.",
+    whatItProves: "Proves Trimindslabs builds production enterprise backends in Java 17, Spring Boot 3.3, and React 18, handling high-frequency telemetry event ingestion with real-time WebSocket distribution and deep learning models.",
     problem: "Warehouses and distribution hubs suffer from inventory blindspots, RFID collision errors, and delayed telemetry feeds, causing operational bottlenecks and inaccurate dispatch schedules.",
     context: "Multi-tenant architecture (`companyId`) engineered for continuous RFID tag ingestion with automatic reader simulators and real-time operational web dashboards.",
     architecture: {
@@ -258,14 +258,14 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     id: "triminds-security-layer",
-    title: "Triminds Security Layer",
+    title: "Trimindslabs Security Layer",
     subtitle: "Enterprise Centralized Identity, Hexagonal Architecture & Policy-Based Access Control",
     tag: "Security Engineering / Hexagonal Architecture",
     sector: "Enterprise Cybersecurity & Identity Infrastructure",
     category: "what-we-built",
     truthStatus: "implemented",
     honestScope: "Centralized identity, authorization, auditing, and policy evaluation platform separating business rules from infrastructure concerns using Hexagonal Architecture.",
-    whatItProves: "Proves Triminds builds robust enterprise security foundations using Java 21, Spring Boot 3.x, Domain-Driven Design, Zero Trust security, and Open Policy Agent (OPA) integration.",
+    whatItProves: "Proves Trimindslabs builds robust enterprise security foundations using Java 21, Spring Boot 3.x, Domain-Driven Design, Zero Trust security, and Open Policy Agent (OPA) integration.",
     problem: "Distributed microservices often embed fragmented authentication, inconsistent authorization checks, and disjointed audit logs, creating critical compliance vulnerabilities.",
     context: "Engineered to satisfy enterprise Zero Trust, Policy-Based Access Control (PBAC), and multi-tenant isolation across distributed applications.",
     architecture: {
@@ -343,14 +343,14 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     id: "triminds-object-scanner-v2",
-    title: "Triminds ObjectScanner V2",
+    title: "Trimindslabs ObjectScanner V2",
     subtitle: "Enterprise Computer Vision & Industrial Asset Counting on Mobile Edge",
     tag: "Computer Vision / Edge AI",
     sector: "Warehouse Automation & Industrial Materials Management",
     category: "what-we-built",
     truthStatus: "implemented",
     honestScope: "Enterprise-grade AI-powered computer vision solution designed to identify, classify, and count warehouse assets using standard Android devices, replacing expensive specialized scanner hardware.",
-    whatItProves: "Proves Triminds trains, optimizes, and deploys specialized computer vision models (YOLOv8) on mobile edge devices with cloud enterprise systems synchronization.",
+    whatItProves: "Proves Trimindslabs trains, optimizes, and deploys specialized computer vision models (YOLOv8) on mobile edge devices with cloud enterprise systems synchronization.",
     problem: "Industrial warehouses rely on costly proprietary hardware and manual visual inspections to count materials, track inventory, and scan barcodes, causing human error and slow throughput.",
     context: "Enables warehouse staff to scan pallets, boxes, labels, QR codes, and materials directly from Android smartphones with edge or cloud AI inference.",
     architecture: {
@@ -428,14 +428,14 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     id: "triminds-vector-ai",
-    title: "Triminds VectorAI for Visual Studio Code",
+    title: "Trimindslabs VectorAI for Visual Studio Code",
     subtitle: "AI-Powered Developer Assistant for Semantic Search & pgvector Query Optimization",
     tag: "Developer Tools / Vector AI",
     sector: "Software Engineering & Database Tooling",
     category: "what-we-built",
     truthStatus: "implemented",
     honestScope: "Standalone Visual Studio Code extension assisting software engineers in writing, correcting, and optimizing vector and semantic queries in PostgreSQL (pgvector) using local AI models.",
-    whatItProves: "Proves Triminds engineers specialized developer tooling and editor extensions, embedding local AI and semantic vector search directly into engineering environments.",
+    whatItProves: "Proves Trimindslabs engineers specialized developer tooling and editor extensions, embedding local AI and semantic vector search directly into engineering environments.",
     problem: "Developers building RAG and semantic search applications struggle with writing efficient pgvector queries, cosine vs L2 distance nuances, and index tuning (HNSW vs IVFFlat) without real-time feedback.",
     context: "Native VS Code extension with sidebar panels, interactive WebViews, and local embedding models providing real-time query insights and vector optimizations.",
     architecture: {
@@ -488,7 +488,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       "Interactive WebViews",
       "Semantic Search"
     ],
-    evolution: "Originated as an internal tool to speed up Triminds' RAG and compliance database engineering; packaged and published as an open-source developer extension.",
+    evolution: "Originated as an internal tool to speed up Trimindslabs' RAG and compliance database engineering; packaged and published as an open-source developer extension.",
     challenges: [
       "Executing embedding inference inside the VS Code extension host without freezing the editor UI thread.",
       "Accurately parsing complex multi-table SQL queries containing mixed scalar and vector distance filters.",
@@ -520,7 +520,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: "what-we-built",
     truthStatus: "implemented",
     honestScope: "Conceived and implemented as the reasoning core of the Trusted Compliance Agent (https://github.com/RodrigoDiasDeOliveira/Trusted-Compliance-Agent). It eliminates stochastic agent drift by constraining multi-step execution within a deterministic dual-pass verification pipeline.",
-    whatItProves: "Proves that Triminds engineers deterministic, controlled agentic workflows where every extraction and decision step is strictly bound to verified citation spans with cryptographic token attestation.",
+    whatItProves: "Proves that Trimindslabs engineers deterministic, controlled agentic workflows where every extraction and decision step is strictly bound to verified citation spans with cryptographic token attestation.",
     problem: "Standard commercial agent frameworks rely on unconstrained ReAct loops and stochastic prompts that hallucinate citations, breach legal boundaries, or trigger non-deterministic execution in regulatory auditing.",
     context: "Operating as the core reasoning engine of Trusted Compliance Agent, validating complex regulatory frameworks (such as EU AI Act High-Risk rules) with character-level accuracy and strict fail-closed safety gates.",
     architecture: {
@@ -596,14 +596,14 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     id: "triminds-ai-cloud-administrator",
-    title: "Triminds AI Cloud Administrator",
+    title: "Trimindslabs AI Cloud Administrator",
     subtitle: "Model Context Protocol (MCP) Multi-Cloud Agentic Orchestrator for AWS, Azure, GCP & OCI",
     tag: "Multi-Cloud MCP Server / AI Infrastructure Agent",
     sector: "Enterprise Multi-Cloud Infrastructure & Autonomous DevOps",
     category: "what-we-built",
     truthStatus: "implemented",
     honestScope: "Production-ready Model Context Protocol (MCP) Server enabling AI agents to manage, provision, and audit infrastructure across AWS, Azure, Google Cloud, and Oracle OCI using natural language with search-and-execute auto-discovery and OS-level keyring security.",
-    whatItProves: "Proves that Triminds builds standardized Model Context Protocol (MCP) server architectures, native tool auto-discovery, and secure multi-cloud resource provisioning (Compute, Storage, Database, Networking, IAM, Serverless, Containers) using FastMCP, Typer CLI, and FastAPI.",
+    whatItProves: "Proves that Trimindslabs builds standardized Model Context Protocol (MCP) server architectures, native tool auto-discovery, and secure multi-cloud resource provisioning (Compute, Storage, Database, Networking, IAM, Serverless, Containers) using FastMCP, Typer CLI, and FastAPI.",
     problem: "Managing heterogeneous multi-cloud infrastructure across AWS, Azure, GCP, and Oracle OCI forces operations teams to context-switch across incompatible consoles and fragmented CLI tooling. Traditional LLM-based cloud tooling suffers from hallucinations, unbounded tool manifests that overflow prompt context windows, and insecure plaintext credential handling.",
     context: "Designed as an agent-native control plane adhering to the Model Context Protocol (MCP). The system exposes 9 granular resource categories via natural language while enforcing strict zero-leak credential isolation (keyring encryption) and dynamic tool auto-discovery.",
     architecture: {
@@ -682,16 +682,16 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     id: "triminds-integration-platform",
-    title: "Triminds Integration Platform",
+    title: "Trimindslabs Integration Platform",
     subtitle: "Unified Polyglot API Mediation, Asynchronous Event Mesh & Platform Engineering Substrate",
     tag: "Enterprise Integration Platform / Microservice Mesh",
     sector: "Enterprise Systems Integration & Event-Driven Architecture",
     category: "what-we-built",
     truthStatus: "implemented",
-    honestScope: "Production-ready Enterprise Integration Platform and Platform Engineering substrate interconnecting Triminds distributed AI systems, logistics pipelines (TLP), geospatial analytics, security layers, and multi-cloud providers via standardized event streaming, REST/gRPC contracts, and automated developer platform tooling.",
-    whatItProves: "Proves that Triminds builds resilient, low-latency integration platforms, message transformation pipelines, unified API gateways, and standardized platform engineering templates to eliminate silos across multi-language enterprise services (Java Spring Boot, Python FastAPI, TypeScript/React).",
+    honestScope: "Production-ready Enterprise Integration Platform and Platform Engineering substrate interconnecting Trimindslabs distributed AI systems, logistics pipelines (TLP), geospatial analytics, security layers, and multi-cloud providers via standardized event streaming, REST/gRPC contracts, and automated developer platform tooling.",
+    whatItProves: "Proves that Trimindslabs builds resilient, low-latency integration platforms, message transformation pipelines, unified API gateways, and standardized platform engineering templates to eliminate silos across multi-language enterprise services (Java Spring Boot, Python FastAPI, TypeScript/React).",
     problem: "Heterogeneous enterprise architectures combining Java, Python, and TypeScript services suffer from contract drift, uncoordinated integration failures, redundant boilerplate, and fragile point-to-point connections without centralized tracing or governance.",
-    context: "Engineered as the central enterprise integration backbone and developer platform substrate for Triminds. It standardizes inter-service communication, payload validation, event mediation, and automated CI/CD bootstrapping across all Triminds operational engines.",
+    context: "Engineered as the central enterprise integration backbone and developer platform substrate for Trimindslabs. It standardizes inter-service communication, payload validation, event mediation, and automated CI/CD bootstrapping across all Trimindslabs operational engines.",
     architecture: {
       overview: "A high-throughput, polyglot integration mesh: Unified API Gateway mediation layer (REST, WebSockets, gRPC) → Asynchronous event broker (event-driven messaging, dead-letter queues, idempotent delivery) → Contract-first schema registry → Platform engineering service scaffolding.",
       components: [
@@ -706,7 +706,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     realArchitectureVerification: {
       documented: "Enterprise Integration Platform with automated service bootstrapping, schema validation, and unified inter-system messaging.",
       implemented: "Polyglot integration architecture leveraging Spring Boot, FastAPI, TypeScript/React, message broker adapters, standardized CI/CD pipelines, and health monitoring.",
-      presentedOnSite: "Accurately presented as an enterprise integration platform and platform engineering substrate connecting Triminds core systems with passing tests and verified contracts.",
+      presentedOnSite: "Accurately presented as an enterprise integration platform and platform engineering substrate connecting Trimindslabs core systems with passing tests and verified contracts.",
       coherenceScore: "100% Coherent"
     },
     realTechnologies: {
@@ -743,7 +743,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       "OpenTelemetry Tracing",
       "Docker Multi-Stage & CI/CD"
     ],
-    evolution: "Evolved from disparate ad-hoc service connectors into an enterprise-grade integration platform and developer substrate that standardizes bootstrap, security, event propagation, and observability across all Triminds initiatives.",
+    evolution: "Evolved from disparate ad-hoc service connectors into an enterprise-grade integration platform and developer substrate that standardizes bootstrap, security, event propagation, and observability across all Trimindslabs initiatives.",
     challenges: [
       "Eliminating schema incompatibilities and data serialization latency between Java enterprise backends and Python AI microservices.",
       "Ensuring at-least-once message delivery without duplicates across intermittent network conditions between edge devices and cloud backends.",
@@ -775,7 +775,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: "what-is-planned",
     truthStatus: "planned",
     honestScope: "Architectural roadmap initiative planned for Q4 2026 — defining SPIFFE/SPIRE mutual TLS and wireguard tunnels across independent European cloud providers.",
-    whatItProves: "Reflects Triminds' proactive planning for strict European digital sovereignty, ensuring applications can migrate across sovereign providers without cloud lock-in.",
+    whatItProves: "Reflects Trimindslabs' proactive planning for strict European digital sovereignty, ensuring applications can migrate across sovereign providers without cloud lock-in.",
     problem: "European enterprises face increasing legal requirements to guarantee data sovereignty, yet single-cloud deployments leave organizations vulnerable to foreign legal reach (e.g. US Cloud Act) and vendor lock-in.",
     context: "Planned infrastructure specification designed to provide automated failover between OVHcloud, Hetzner, and Google Cloud EU sovereign regions.",
     architecture: {
@@ -789,7 +789,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       diagramText: "EU Cloud A (OVH) ➔ WireGuard mTLS Tunnel ➔ SPIRE Identity Handshake ➔ EU Cloud B (Hetzner / GCP EU)"
     },
     realArchitectureVerification: {
-      documented: "Architectural RFC: DOC-TRIMINDS-SOVEREIGN-MESH-RFC-01.",
+      documented: "Architectural RFC: DOC-TRIMINDSLABS-SOVEREIGN-MESH-RFC-01.",
       implemented: "Phase: Architectural Blueprint & Evaluation Stage. No production code claims.",
       presentedOnSite: "Accurately designated as 'What is planned' with 'Planned' status badge.",
       coherenceScore: "100% Coherent"
