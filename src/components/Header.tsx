@@ -144,7 +144,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-bold text-lg tracking-tight text-[#1A1A1A] font-sans">
-                  TRIMINDS
+                  TRIMINDSLABS
                 </span>
                 <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-[#EAEAE6] text-[#70706B] border border-[#D1D1CD]">
                   ENTERPRISE
