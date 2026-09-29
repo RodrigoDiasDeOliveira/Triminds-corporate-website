@@ -127,10 +127,10 @@ export const CASE_STUDIES: CaseStudy[] = [
       observability: ["Prometheus raster throughput exporter", "Grafana spatial dashboard"]
     },
     repository: {
-      name: "RodrigoDiasDeOliveira/Triminds-Geo-AI",
+      name: "RodrigoDiasDeOliveira/Trimindslabs-Geo-AI",
       isPrivate: false,
       visibilityBadge: "Public Repository",
-      url: "https://github.com/RodrigoDiasDeOliveira/Triminds-Geo-AI",
+      url: "https://github.com/RodrigoDiasDeOliveira/Trimindslabs-Geo-AI",
       testSuiteStatus: "86 Tests Passing (Raster math & topology checks)",
       ciCdPipeline: "GitHub Actions CI: Passed",
       adrReferences: ["ADR-002: Dynamic Quadkey Tiling vs Arbitrary Bounding Box", "ADR-005: FP16 Edge Inference"]
@@ -212,10 +212,10 @@ export const CASE_STUDIES: CaseStudy[] = [
       observability: ["Spring Boot Actuator", "WebSocket connection telemetry", "Logback structured logging"]
     },
     repository: {
-      name: "RodrigoDiasDeOliveira/TLP-Triminds-Logistics-Platform",
+      name: "RodrigoDiasDeOliveira/TLP-Trimindslabs-Logistics-Platform",
       isPrivate: false,
       visibilityBadge: "Public Repository",
-      url: "https://github.com/RodrigoDiasDeOliveira/TLP-Triminds-Logistics-Platform",
+      url: "https://github.com/RodrigoDiasDeOliveira/TLP-Trimindslabs-Logistics-Platform",
       testSuiteStatus: "Maven build passing with comprehensive unit & integration tests",
       ciCdPipeline: "GitHub Actions CI: Passed",
       adrReferences: ["ADR-001: Java 17 & Spring Boot 3.3 Modular Architecture", "ADR-002: STOMP WebSockets for Real-Time RFID Events"]
@@ -297,10 +297,10 @@ export const CASE_STUDIES: CaseStudy[] = [
       observability: ["Centralized audit ledger", "Spring Boot Actuator metrics"]
     },
     repository: {
-      name: "RodrigoDiasDeOliveira/Triminds-Security-Layer",
+      name: "RodrigoDiasDeOliveira/Trimindslabs-Security-Layer",
       isPrivate: false,
       visibilityBadge: "Public Repository",
-      url: "https://github.com/RodrigoDiasDeOliveira/Triminds-Security-Layer",
+      url: "https://github.com/RodrigoDiasDeOliveira/Trimindslabs-Security-Layer",
       testSuiteStatus: "ArchUnit architectural rules & JUnit 5 test suites passing",
       ciCdPipeline: "GitHub Actions CI: Passed",
       adrReferences: ["ADR-001: Hexagonal Architecture (Ports & Adapters)", "ADR-002: OPA Policy-Based Access Control"]
@@ -382,10 +382,10 @@ export const CASE_STUDIES: CaseStudy[] = [
       observability: ["Inference latency metrics", "Detection accuracy confidence logging"]
     },
     repository: {
-      name: "RodrigoDiasDeOliveira/Triminds-Object_Scanner_V2",
+      name: "RodrigoDiasDeOliveira/Trimindslabs-Object_Scanner_V2",
       isPrivate: false,
       visibilityBadge: "Public Repository",
-      url: "https://github.com/RodrigoDiasDeOliveira/Triminds-Object_Scanner_V2",
+      url: "https://github.com/RodrigoDiasDeOliveira/Trimindslabs-Object_Scanner_V2",
       testSuiteStatus: "Computer Vision benchmark validation: 94.8% mAP@0.5",
       ciCdPipeline: "GitHub Actions CI: Passed",
       adrReferences: ["ADR-001: YOLOv8 for Mobile & Edge Asset Counting", "ADR-002: Offline Edge Cache with Cloud Synchronization"]
@@ -467,10 +467,10 @@ export const CASE_STUDIES: CaseStudy[] = [
       observability: ["Local telemetry with opt-in diagnostics"]
     },
     repository: {
-      name: "RodrigoDiasDeOliveira/Triminds-VectorAI-for-Visual-Studio-Code",
+      name: "RodrigoDiasDeOliveira/Trimindslabs-VectorAI-for-Visual-Studio-Code",
       isPrivate: false,
       visibilityBadge: "Public Repository",
-      url: "https://github.com/RodrigoDiasDeOliveira/Triminds-VectorAI-for-Visual-Studio-Code",
+      url: "https://github.com/RodrigoDiasDeOliveira/Trimindslabs-VectorAI-for-Visual-Studio-Code",
       testSuiteStatus: "Extension test suite passing with Mocha",
       ciCdPipeline: "GitHub Actions CI: Passed",
       adrReferences: ["ADR-001: Local On-Device AI over Cloud Inference for Code Privacy", "ADR-002: WebView Architecture for Query Visualizer"]
@@ -636,10 +636,10 @@ export const CASE_STUDIES: CaseStudy[] = [
       observability: ["Structured JSON Logging", "Zero-leak secret masking", "Provider health checks"]
     },
     repository: {
-      name: "RodrigoDiasDeOliveira/Triminds-Ai-cloud-Administrator",
+      name: "RodrigoDiasDeOliveira/Trimindslabs-Ai-cloud-Administrator",
       isPrivate: false,
       visibilityBadge: "Public Repository",
-      url: "https://github.com/RodrigoDiasDeOliveira/Triminds-Ai-cloud-Administrator",
+      url: "https://github.com/RodrigoDiasDeOliveira/Trimindslabs-Ai-cloud-Administrator",
       testSuiteStatus: "Pytest Suite Passing (Unit & Provider Mock Tests)",
       ciCdPipeline: "GitHub Actions CI / Docker Multi-Stage: Passed",
       adrReferences: ["ADR-001: Model Context Protocol (FastMCP) Specification", "ADR-003: Zero-Leak Keyring Credential Isolation", "ADR-005: Search-and-Execute Tool Discovery Pattern"]
@@ -678,7 +678,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { metric: "Tool Domains", value: "9 Categories", description: "Compute, Storage, Database, Network, IAM, Serverless, Containers, Monitoring, Security" },
       { metric: "Credential Leakage", value: "0.00%", description: "Keyring encryption and zero-log sanitization on all secret vectors" }
     ],
-    evidence: "Public GitHub repository with full source code, FastMCP implementation, CLI commands, Dockerfile, and automated tests at https://github.com/RodrigoDiasDeOliveira/Triminds-Ai-cloud-Administrator."
+    evidence: "Public GitHub repository with full source code, FastMCP implementation, CLI commands, Dockerfile, and automated tests at https://github.com/RodrigoDiasDeOliveira/Trimindslabs-Ai-cloud-Administrator."
   },
   {
     id: "triminds-integration-platform",
@@ -722,10 +722,10 @@ export const CASE_STUDIES: CaseStudy[] = [
       observability: ["Prometheus Metrics", "OpenTelemetry Distributed Tracing", "Structured JSON Logging", "Unified Health Endpoint /health"]
     },
     repository: {
-      name: "RodrigoDiasDeOliveira/Triminds-Integration-Platform",
+      name: "RodrigoDiasDeOliveira/Trimindslabs-Integration-Platform",
       isPrivate: false,
       visibilityBadge: "Public Repository",
-      url: "https://github.com/RodrigoDiasDeOliveira/Triminds-Integration-Platform",
+      url: "https://github.com/RodrigoDiasDeOliveira/Trimindslabs-Integration-Platform",
       testSuiteStatus: "Unit & Integration Test Suites Passing",
       ciCdPipeline: "GitHub Actions Multi-Language CI/CD: Passed",
       adrReferences: ["ADR-001: Event-Driven Integration Topology", "ADR-002: Zero-Trust Inter-Service Authorization", "ADR-004: Standardized Platform Engineering Substrate"]
@@ -764,7 +764,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { metric: "Supported Protocols", value: "REST + WS + MCP", description: "Unified protocol mediation across HTTP, WebSocket streams, and MCP" },
       { metric: "Integration SLA", value: "99.99%", description: "High-availability event routing with automatic retry and dead-letter queues" }
     ],
-    evidence: "Public GitHub repository with platform architecture, integration adapters, standardized templates, and automated verification suites at https://github.com/RodrigoDiasDeOliveira/Triminds-Integration-Platform."
+    evidence: "Public GitHub repository with platform architecture, integration adapters, standardized templates, and automated verification suites at https://github.com/RodrigoDiasDeOliveira/Trimindslabs-Integration-Platform."
   },
   {
     id: "multi-cloud-sovereign-mesh",
