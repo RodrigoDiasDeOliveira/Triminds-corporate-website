@@ -157,7 +157,7 @@ export const VocabularyModal: React.FC<VocabularyModalProps> = ({ isOpen, onClos
 
         {/* Footer */}
         <div className="px-6 py-3 border-t border-[#D1D1CD] bg-white flex justify-between items-center text-[11px] font-mono text-[#70706B]">
-          <span>SPEC-REV: 2026.08 // TRIMINDS-ONTOLOGY</span>
+          <span>SPEC-REV: 2026.08 // TRIMINDSLABS-ONTOLOGY</span>
           <button
             onClick={onClose}
             className="px-4 py-1.5 rounded bg-[#1A1A1A] hover:bg-black text-white transition-colors cursor-pointer font-semibold"
