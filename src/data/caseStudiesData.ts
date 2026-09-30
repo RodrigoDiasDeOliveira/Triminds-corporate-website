@@ -257,6 +257,61 @@ export const CASE_STUDIES: CaseStudy[] = [
     evidence: "Public GitHub repository with Maven build configuration, Spring Boot controllers, Deeplearning4j integration, and React 18 dashboard."
   },
   {
+    id: "trimindslabs-tlp-next-gen",
+    title: "Trimindslabs Logistics Platform Next-Gen",
+    subtitle: "Role-Driven Logistics Operations, Compliance & Verified Delivery Evidence",
+    tag: "Logistics Platform / Operational Systems",
+    sector: "European Logistics & Supply Chain",
+    category: "what-we-built",
+    truthStatus: "partial",
+    deploymentStatus: "validated",
+    evidenceSource: "RodrigoDiasDeOliveira/trimindlabs-Logistic-plataform-next-gen",
+    lastVerified: "2026-09-29",
+    honestScope: "Current Next-Gen logistics core with architecture hardening, tenant isolation, RBAC, shipment, fleet, ePOD, telemetry and cross-docking foundations. Runtime/integration validation remains in progress.",
+    whatItProves: "Demonstrates a domain-oriented logistics architecture evolving toward a role-driven operational platform without conflating architectural readiness with full runtime production readiness.",
+    problem: "Logistics operations require different users to see and execute different responsibilities while maintaining tenant isolation, compliance visibility and auditable delivery evidence.",
+    context: "The current product direction is oriented to Spain and the European logistics context while retaining Brazilian fiscal integration as an external adapter concern.",
+    architecture: {
+      overview: "Tenant-aware logistics core with identity and RBAC, shipment/fleet/ePOD/cross-docking domains, telemetry and role-driven operational UX.",
+      components: ["Identity & tenant isolation", "RBAC and role-oriented workflows", "Shipment, fleet and ePOD domains", "Telemetry and device identity", "Compliance and transport-document context"],
+      diagramText: "Identity ➔ Tenant/RBAC ➔ Operations ➔ Transport Documents / Compliance / Tracking ➔ ePOD & Evidence"
+    },
+    realArchitectureVerification: {
+      documented: "Java 21/Spring Boot logistics core with React/TypeScript frontend, PostgreSQL persistence, tenant-scoped domains and role-driven UX model.",
+      implemented: "Repository contains identity, onboarding, RBAC, shipment, ePOD, fleet, cross-docking, telemetry and migration foundations; backend CI workflow is present.",
+      presentedOnSite: "Presented as a Next-Gen architecture with explicit readiness boundaries; runtime completeness is not claimed.",
+      coherenceScore: "Verified Alignment"
+    },
+    realTechnologies: {
+      languages: ["Java 21", "TypeScript"],
+      frameworks: ["Spring Boot", "React"],
+      libraries: [],
+      databases: ["PostgreSQL"],
+      cloud: ["Google Cloud Run"],
+      iac: [],
+      apis: ["REST", "WebSocket/STOMP"],
+      testing: ["Repository test suite", "Backend CI workflow"],
+      ciCd: ["GitHub Actions"],
+      observability: ["Telemetry domain foundation"]
+    },
+    repository: {
+      name: "RodrigoDiasDeOliveira/trimindlabs-Logistic-plataform-next-gen",
+      isPrivate: true,
+      visibilityBadge: "Private Enterprise Monorepo",
+      url: "https://github.com/RodrigoDiasDeOliveira/trimindlabs-Logistic-plataform-next-gen",
+      testSuiteStatus: "Tests present; runtime/integration validation in progress",
+      ciCdPipeline: "Backend CI workflow present; execution evidence pending",
+      adrReferences: ["ADR-001: Role-Driven Operational UX", "ADR-002: Clean Production Data Boundary", "ADR-003: EU-First Compliance with External Regulatory Adapters"]
+    },
+    engineering: ["Hardened tenant isolation, identity and RBAC boundaries.", "Separated logistics core concerns from jurisdiction-specific fiscal integrations.", "Defined role-driven operational UX without treating UX design as runtime evidence."],
+    technology: ["Java 21 / Spring Boot", "React / TypeScript", "PostgreSQL", "WebSocket/STOMP", "Google Cloud Run"],
+    evolution: "Evolved from earlier logistics generations into the current Next-Gen repository with stronger tenant, identity, RBAC, operational and evidence boundaries.",
+    challenges: ["Completing runtime and integration validation.", "Maintaining strict tenant isolation across operational domains.", "Balancing European operational requirements with jurisdiction-specific external integrations."],
+    decisions: [{decision: "Adopted role-driven operational UX.", rationale: "Different operational responsibilities require different workflows, data visibility and authorized actions."}, {decision: "Keep production data initialization clean.", rationale: "Real registration and onboarding must be testable without hidden pre-created business state."}],
+    results: [{metric: "Architecture", value: "Hardened", description: "Core identity, tenant, RBAC and operational paths audited."}, {metric: "UX Model", value: "Defined", description: "ADMIN, FINANCE, OPERATOR, OPERATIONS and DRIVER responsibilities formalized."}],
+    evidence: "Repository, ADRs and CI configuration provide the current evidence boundary; runtime/integration validation remains explicitly tracked."
+  },
+  {
     id: "triminds-security-layer",
     title: "Trimindslabs Security Layer",
     subtitle: "Enterprise Centralized Identity, Hexagonal Architecture & Policy-Based Access Control",
