@@ -149,24 +149,19 @@ export const SystemTelemetryModal: React.FC<SystemTelemetryModalProps> = ({
     }
   }, [isOpen, healthState, data]);
 
-  // Suporte a Polling automático a cada 30 segundos com opção de pausar/retomar
+  // Polling autoritativo a cada 30 segundos. O refresh passa exclusivamente
+  // pelo hook React, evitando qualquer fallback do dashboard legado.
   useEffect(() => {
-    if (!isOpen) return;
+    if (!isOpen || !isPolling) return;
 
-    if (isPolling) {
-      startAuditPolling(30000);
-      const timer = setInterval(() => {
-        handleRefresh();
-      }, 30000);
+    const timer = setInterval(() => {
+      refresh();
+    }, 30000);
 
-      return () => {
-        clearInterval(timer);
-        stopAuditPolling(false);
-      };
-    } else {
-      stopAuditPolling(true);
-    }
-  }, [isOpen, isPolling]);
+    return () => {
+      clearInterval(timer);
+    };
+  }, [isOpen, isPolling, refresh]);
 
   // Timer de "Última atualização há X segundos" atualizado a cada 1s via JS
   useEffect(() => {
