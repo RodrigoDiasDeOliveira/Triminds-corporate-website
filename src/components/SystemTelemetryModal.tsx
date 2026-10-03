@@ -224,14 +224,12 @@ export const SystemTelemetryModal: React.FC<SystemTelemetryModalProps> = ({
 
   const handleRefresh = async () => {
     try {
+      // The React hook is the authoritative refresh path. Do not invoke the
+      // legacy DOM refresh afterwards because it can fall back to the static
+      // snapshot and visually overwrite live runtime evidence.
       await refresh();
-      if (typeof window !== 'undefined' && window.refreshAuditDashboard) {
-        await window.refreshAuditDashboard();
-      } else {
-        await refreshAuditDashboard();
-      }
     } catch (err) {
-      console.error('Error triggering audit refresh:', err);
+      console.error('Error triggering authoritative audit refresh:', err);
     }
   };
 
