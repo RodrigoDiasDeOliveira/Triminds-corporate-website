@@ -146,6 +146,17 @@ export async function fetchEcosystemSnapshot(forceFresh = false): Promise<AuditS
       evidenceLevel: 'Production Evidence',
       lastKnownEvidence: portfolio.evidence,
       lastAuditedDate: portfolio.verified_at,
+      runtimeLabel: 'Portfolio V2',
+      runtimeEvidence: [
+        `Repository: ${portfolio.repository}`,
+        `Status: ${portfolio.status}`,
+        `Deployment: ${portfolio.deployment}`,
+        `Region: ${portfolio.region}`,
+        `Revision: ${portfolio.revision}`,
+        `Commit: ${portfolio.commit}`,
+        `URL: ${portfolio.production_url}`,
+        `Evidence: ${portfolio.evidence}`
+      ],
       summary: `${portfolio.status} // ${portfolio.deployment} // revision ${portfolio.revision}`
     });
 
@@ -154,6 +165,18 @@ export async function fetchEcosystemSnapshot(forceFresh = false): Promise<AuditS
       evidenceLevel: 'Production Evidence',
       lastKnownEvidence: tlp.evidence,
       lastAuditedDate: tlp.verified_at,
+      runtimeLabel: 'TLP Next-Gen',
+      runtimeEvidence: [
+        `Repository: ${tlp.repository}`,
+        `Status: ${tlp.status}`,
+        `Project: ${tlp.project}`,
+        `Service: ${tlp.service}`,
+        `Region: ${tlp.region}`,
+        `Architecture: ${tlp.architecture}`,
+        `Database: ${tlp.database}`,
+        `URL: ${tlp.url}`,
+        `Evidence: ${tlp.evidence}`
+      ],
       summary: `${tlp.status} // ${tlp.architecture} // ${tlp.database}`
     });
 
@@ -162,6 +185,17 @@ export async function fetchEcosystemSnapshot(forceFresh = false): Promise<AuditS
       evidenceLevel: 'Production Evidence',
       lastKnownEvidence: geoAi.evidence,
       lastAuditedDate: geoAi.verified_at,
+      runtimeLabel: 'Geo-AI V4',
+      runtimeEvidence: [
+        `Repository: ${geoAi.repository}`,
+        `Status: ${geoAi.status}`,
+        `Deployment: ${geoAi.deployment}`,
+        `Region: ${geoAi.region}`,
+        ...(geoAi.revision ? [`Revision: ${geoAi.revision}`] : []),
+        ...(geoAi.commit ? [`Commit: ${geoAi.commit}`] : []),
+        ...(geoAi.production_url ? [`URL: ${geoAi.production_url}`] : []),
+        `Evidence: ${geoAi.evidence}`
+      ],
       summary: `${geoAi.status} // ${geoAi.deployment} // ${geoAi.region}`
     });
 
