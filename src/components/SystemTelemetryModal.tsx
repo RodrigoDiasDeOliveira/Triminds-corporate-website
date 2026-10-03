@@ -27,12 +27,9 @@ import {
 import { useLanguage } from '../i18n/LanguageContext';
 import { useEcosystemAudit } from '../hooks/useEcosystemAudit';
 import { AuditedProject, AuditHealthStatus, EvidenceLevel } from '../types/ecosystemAudit';
-import { 
-  refreshAuditDashboard, 
-  startAuditPolling, 
-  stopAuditPolling, 
+import {
   formatRelativeTime,
-  updateEcosystemVisualState 
+  updateEcosystemVisualState
 } from '../services/dashboard';
 
 interface SystemTelemetryModalProps {
@@ -207,10 +204,12 @@ export const SystemTelemetryModal: React.FC<SystemTelemetryModalProps> = ({
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
         const matchesName = p.name.toLowerCase().includes(q);
+        const matchesRuntime = p.runtimeLabel?.toLowerCase().includes(q) ?? false;
+        const matchesRuntimeEvidence = p.runtimeEvidence?.some(e => e.toLowerCase().includes(q)) ?? false;
         const matchesSummary = p.summary.toLowerCase().includes(q);
         const matchesPriority = p.currentPriority.toLowerCase().includes(q);
         const matchesLimitations = p.knownLimitations.some(l => l.toLowerCase().includes(q));
-        return matchesName || matchesSummary || matchesPriority || matchesLimitations;
+        return matchesName || matchesRuntime || matchesRuntimeEvidence || matchesSummary || matchesPriority || matchesLimitations;
       }
 
       return true;
@@ -683,9 +682,16 @@ export const SystemTelemetryModal: React.FC<SystemTelemetryModalProps> = ({
                                 {getStatusBadge(project.status)}
                                 {getEvidenceBadge(project.evidenceLevel)}
                               </div>
-                              <p className="text-[11px] text-[#70706B] font-sans line-clamp-1 mt-0.5">
-                                {project.summary}
-                              </p>
+                              <div className="flex items-center gap-1.5 mt-1 flex-wrap">
+                                {project.runtimeLabel && (
+                                  <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-sky-50 text-sky-900 border border-sky-300 uppercase tracking-wide">
+                                    LIVE RUNTIME: {project.runtimeLabel}
+                                  </span>
+                                )}
+                                <p className="text-[11px] text-[#70706B] font-sans line-clamp-1">
+                                  {project.summary}
+                                </p>
+                              </div>
                             </div>
                           </div>
 
@@ -737,6 +743,22 @@ export const SystemTelemetryModal: React.FC<SystemTelemetryModalProps> = ({
                                 </ul>
                               </div>
                             </div>
+
+                            {project.runtimeEvidence && project.runtimeEvidence.length > 0 && (
+                              <div className="p-3 rounded bg-white border border-sky-200 space-y-2">
+                                <div className="text-[10px] text-sky-800 uppercase font-bold flex items-center gap-1">
+                                  <Activity className="w-3 h-3 text-sky-600" />
+                                  <span>Live Runtime Evidence — {project.runtimeLabel || 'Production Runtime'}</span>
+                                </div>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1">
+                                  {project.runtimeEvidence.map((item, i) => (
+                                    <div key={i} className="text-[10px] text-[#4A4A45] font-mono break-words">
+                                      {item}
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
 
                             {/* 8 Technical Dimensions Grid */}
                             <div className="space-y-2">
