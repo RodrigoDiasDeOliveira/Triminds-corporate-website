@@ -78,10 +78,9 @@ export function clearAuditCache(): void {
  */
 export async function fetchEcosystemSnapshot(forceFresh = false): Promise<AuditServiceState> {
   const baseAuditUrl = (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_ECOSYSTEM_AUDIT_URL)
-    ? (import.meta as any).env.VITE_ECOSYSTEM_AUDIT_URL
-    : '/data/ecosystem-audit-snapshot.json';
+    ? (import.meta as any).env.VITE_ECOSYSTEM_AUDIT_URL.replace(/\/$/, '')
+    : 'https://triminds-ecosystem-audit-1091629879450.europe-west1.run.app';
 
-  // Check cache first if not forced fresh
   if (!forceFresh) {
     const cached = getCachedSnapshot();
     if (cached) {
@@ -98,45 +97,94 @@ export async function fetchEcosystemSnapshot(forceFresh = false): Promise<AuditS
     }
   }
 
-  try {
-    // Cache-bust if forceFresh is requested
-    const auditUrl = forceFresh
-      ? `${baseAuditUrl}${baseAuditUrl.includes('?') ? '&' : '?'}_t=${Date.now()}`
-      : baseAuditUrl;
-
-    const response = await fetch(auditUrl, {
-      headers: { 
+  const fetchJson = async (path: string) => {
+    const url = `${baseAuditUrl}${path}${path.includes('?') ? '&' : '?'}_t=${Date.now()}`;
+    const response = await fetch(url, {
+      headers: {
         'Accept': 'application/json',
         'Cache-Control': 'no-cache, no-store, must-revalidate',
         'Pragma': 'no-cache'
       },
-      cache: forceFresh ? 'reload' : 'default'
+      cache: 'no-store'
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${path}`);
+    }
+    return response.json();
+  };
+
+  try {
+    // The audit API is the live authority. The website snapshot remains the
+    // presentation contract, and is enriched with current runtime evidence.
+    const [summary, portfolio, tlp, geoAi] = await Promise.all([
+      fetchJson('/api/v1/audit/summary'),
+      fetchJson('/api/v1/deployments/portfolio-v2'),
+      fetchJson('/api/v1/deployments/tlp-nextgen'),
+      fetchJson('/api/v1/deployments/geo-ai-v4')
+    ]);
+
+    const snapshotResponse = await fetch(`/data/ecosystem-audit-snapshot.json?_t=${Date.now()}`, {
+      headers: { 'Accept': 'application/json', 'Cache-Control': 'no-cache' },
+      cache: 'no-store'
+    });
+    if (!snapshotResponse.ok) {
+      throw new Error(`HTTP ${snapshotResponse.status}: /data/ecosystem-audit-snapshot.json`);
+    }
+
+    const snapshot = await snapshotResponse.json();
+    if (!validateEcosystemSnapshot(snapshot)) {
+      throw new Error('Website audit snapshot contract validation failed');
+    }
+
+    const updateProject = (id: string, patch: Partial<AuditedProject>) => {
+      const project = snapshot.projects.find((p: AuditedProject) => p.id === id);
+      if (project) Object.assign(project, patch);
+    };
+
+    updateProject('Triminds-Technology-Portfolio', {
+      status: portfolio.operational_status === 'GREEN' ? 'GREEN' : 'YELLOW',
+      evidenceLevel: 'Production Evidence',
+      lastKnownEvidence: portfolio.evidence,
+      lastAuditedDate: portfolio.verified_at,
+      summary: `${portfolio.status} // ${portfolio.deployment} // revision ${portfolio.revision}`
     });
 
-    if (!response.ok) {
-      throw new Error(`HTTP Error ${response.status}: Failed to retrieve authoritative audit data`);
-    }
+    updateProject('New-Triminds-Logistics-Plataform', {
+      status: tlp.operational_status === 'GREEN' ? 'GREEN' : 'YELLOW',
+      evidenceLevel: 'Production Evidence',
+      lastKnownEvidence: tlp.evidence,
+      lastAuditedDate: tlp.verified_at,
+      summary: `${tlp.status} // ${tlp.architecture} // ${tlp.database}`
+    });
 
-    const json = await response.json();
-    if (!validateEcosystemSnapshot(json)) {
-      throw new Error('Ecosystem Audit data contract validation failed: invalid schema or missing projects');
-    }
+    updateProject('Triminds-Geo-AI', {
+      status: geoAi.operational_status === 'GREEN' ? 'GREEN' : 'YELLOW',
+      evidenceLevel: 'Production Evidence',
+      lastKnownEvidence: geoAi.evidence,
+      lastAuditedDate: geoAi.verified_at,
+      summary: `${geoAi.status} // ${geoAi.deployment} // ${geoAi.region}`
+    });
 
-    // Capture the exact time of this refresh operation
+    snapshot.generatedAt = summary.last_audit_timestamp || new Date().toISOString();
+    snapshot.source = 'Triminds-ecosystem-audit';
+    snapshot.metadata.auditVersion = 'v1.2.0';
+    snapshot.metadata.evidenceDistinctionNotice =
+      'Live runtime evidence is supplied by Trimindslabs Ecosystem Audit; architecture and repository maturity remain separate evidence dimensions.';
+
+    // Keep the existing UI contract, but make the displayed audit timestamp live.
+    snapshot.summary.lastAuditRun = summary.last_audit_timestamp || snapshot.summary.lastAuditRun;
+
     const refreshTimestamp = new Date().toISOString();
-
-    // Save to cache with the exact timestamp
-    setCachedSnapshot(json, refreshTimestamp);
+    setCachedSnapshot(snapshot, refreshTimestamp);
 
     return {
-      data: json,
+      data: snapshot,
       status: 'live',
       error: null,
       lastUpdated: refreshTimestamp,
       isCached: false
     };
   } catch (err: any) {
-    // Fail-safe: Check if we have stale cache available to inspect with clear warning
     const fallbackCache = getCachedSnapshot();
     if (fallbackCache) {
       return {
@@ -148,11 +196,10 @@ export async function fetchEcosystemSnapshot(forceFresh = false): Promise<AuditS
       };
     }
 
-    // No cache and request failed: Truthful fail-safe declaration
     return {
       data: null,
       status: 'error',
-      error: `Authoritative Ecosystem Audit service is currently unavailable (${err.message}). In accordance with the Triminds truthfulness policy, no synthetic or unverified data will be displayed.`,
+      error: `Authoritative Ecosystem Audit service is currently unavailable (${err.message}). No synthetic telemetry is displayed.`,
       lastUpdated: null,
       isCached: false
     };
