@@ -27,6 +27,10 @@ export interface AuditDimension {
 export interface AuditedProject {
   id: string;
   name: string;
+  /** Human-readable runtime identity supplied by the live Ecosystem Audit. */
+  runtimeLabel?: string;
+  /** Structured live deployment evidence for production runtime identity. */
+  runtimeEvidence?: string[];
   repositoryUrl?: string;
   status: AuditHealthStatus;
   evidenceLevel: EvidenceLevel;
